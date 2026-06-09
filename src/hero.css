@@ -185,12 +185,18 @@
 
 @media (max-width: 768px) {
     .hero {
-        height: 100svh;
+        height: auto;
+        min-height: 100svh;
+    }
+
+    .hero-content {
+        height: auto;
+        min-height: 100svh;
+        padding: 100px 20px 40px;
     }
 
     .heroh1 {
         font-size: 40px;
-
     }
 
     .heroh2 {
@@ -198,21 +204,24 @@
         padding-left: 0;
     }
 
+    .herodiv p {
+        font-size: 14px;
+        max-width: 100%;
+    }
+
     .hero-stats {
         flex-direction: column;
         align-items: center;
         gap: 20px;
-    }
-
-    .hero-stats {
         background-color: transparent;
-        margin-top: 10px;
+        margin-top: 20px;
         max-width: 100%;
+        padding: 15px 20px;
     }
 
     .total-cust, .licensed, .disbursed {
-    width: 300px;
-}
+        width: 300px;
+    }
 }
 
 
