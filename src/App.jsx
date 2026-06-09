@@ -13,31 +13,28 @@ import Footee from "./Footer"
 
 function App() {
 
-   const [scrolled, setScrolled] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 8)
     window.addEventListener('scroll', handleScroll, { passive: true })
 
-
     AOS.init({
-        duration: 800,
-        once: true
+      duration: 800,
+      once: true
     })
-
-    
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
 
   return (
     <>
-      <NavHead scrolled={scrolled}/>
+      <NavHead scrolled={scrolled} />
       <Hero />
-      <AboutUss/>
-      <Services/>
-      <Jsun/>
-      <Footee/>
+      <AboutUss />
+      <Services />
+      <Jsun />
+      <Footee />
     </>
   )
 }

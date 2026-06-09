@@ -9,11 +9,13 @@
   box-sizing: border-box
 }
 
-#home, #AboutUs, #Services, #Loans, #contact {
-    scroll-margin-top: 74px;
+[data-aos] {
+    pointer-events: none;
 }
 
-
+[data-aos].aos-animate {
+    pointer-events: auto;
+}
 
 html,
 body {
@@ -22,7 +24,9 @@ body {
 }
 
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  scroll-padding-top: 40px;
+  overflow-x: hidden;
 }
 
 body {
@@ -146,9 +150,12 @@ nav ul {
   border: none;
   font-size: 24px;
   cursor: pointer;
-  -webkit-appearance: none;
-  appearance: none;
-  color: #1a1f2c;
+}
+
+.hamburger {
+    -webkit-appearance: none;
+    appearance: none;
+    color: #1a1f2c;
 }
 
 .mobileMenu {
