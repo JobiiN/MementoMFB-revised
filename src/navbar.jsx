@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import logo from './assets/LogoR2.png'
+import logo from './assets/logoR2.png'
 
 function NavHead({ scrolled }) {
   const [menuOpen, setMenuOpen] = useState(false)
