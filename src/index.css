@@ -172,9 +172,14 @@ nav ul {
   transition: transform 0.3s ease;
   width: 32px;
   height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .hamburger--open {
