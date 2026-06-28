@@ -51,7 +51,12 @@ function NavHead({ scrolled }) {
 
 
 
-          <button className='hamburger' onClick={() => setMenuOpen(!menuOpen)}>☰</button>
+          <button
+            className={`hamburger ${menuOpen ? 'hamburger--open' : ''}`}
+            onClick={() => setMenuOpen(!menuOpen)}
+          >
+            {menuOpen ? '✕' : '☰'}
+          </button>
         </div>
 
         <div className={`mobileMenu ${menuOpen ? 'mobileMenu--open' : ''}`}>
