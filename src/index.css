@@ -2,47 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&display=swap');
 
-@font-face {
-    font-family: 'BRFirma';
-    src: url('./assets/BR Firma Regular.otf') format('opentype');
-    font-weight: 400;
-    font-style: normal;
-}
 
-@font-face {
-    font-family: 'BRFirma';
-    src: url('./assets/BR Firma Regular Italic.otf') format('opentype');
-    font-weight: 400;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'BRFirma';
-    src: url('./assets/BR Firma Bold.otf') format('opentype');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BRFirma';
-    src: url('./assets/BR Firma Bold Italic.otf') format('opentype');
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'BRFirma';
-    src: url('./assets/BR Firma Black.otf') format('opentype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'BRFirma';
-    src: url('./assets/BR Firma Black Italic.otf') format('opentype');
-    font-weight: 900;
-    font-style: italic;
-}
 
 
 * {

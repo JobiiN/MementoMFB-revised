@@ -7,10 +7,9 @@ import healthM from './assets/doctor.png'
 function Loans() {
     return (<>
 
-        <br />
-        <br />
-
-        <div className='loans-title-card'>
+       
+<div className='color-back2'>
+        <div className='loans-title-card' data-aos="fade-up" data-aos-delay="100">
             <span className='little-title'>LOANS & ASSET FINANCE</span>
             <h2 className='big-title'>Working capital, when it counts.</h2>
         </div>
@@ -18,7 +17,7 @@ function Loans() {
 
 
 
-            <div className='Salary-loan-card'>
+            <div className='Salary-loan-card' data-aos="fade-up" data-aos-delay="100">
                 <div className='card-img-wrap'>
                     <div className='card-img-bubble'></div>
                     <img src={officeM} />
@@ -28,7 +27,7 @@ function Loans() {
 
             </div>
 
-            <div className='SME-loan-card'>
+            <div className='SME-loan-card' data-aos="fade-up" data-aos-delay="100">
                 <div className='card-img-wrap'>
                     <div className='card-img-bubble'></div>
                     <img src={shopM} />
@@ -39,7 +38,7 @@ function Loans() {
 
 
 
-            <div className='SME-card'>
+            <div className='SME-card' data-aos="fade-up" data-aos-delay="100">
                 <div className='healthcare-deets'>
                     <h2 className='card-title'>HealthCare Loans</h2>
                     <span>Financing for clinics, pharmacies, and healthcare providers. Equip your facility, expand services, or manage cash flow.</span>
@@ -51,12 +50,13 @@ function Loans() {
             </div>
 
         </div>
-        <div className='NDIC-card'>
+        <div className='NDIC-card' data-aos="fade-up" data-aos-delay="100">
             <div className='licensed-loan'>
                 <span>Licensed & Protected</span>
                 <img className="cbnLogo" src={cbm} />
                 <img className="ndicLogo" src={ndi} />
             </div>
+        </div>
         </div>
     </>)
 }

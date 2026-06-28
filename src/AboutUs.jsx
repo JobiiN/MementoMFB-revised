@@ -4,16 +4,19 @@ import Core3 from './assets/growth.png'
 import Core4 from './assets/customerF.png'
 import Core5 from './assets/innovation.png'
 
+import { ShieldCheck, BadgeCheck, TrendingUp, HeartHandshake, Lightbulb } from 'lucide-react'
+
 
 function AboutUss() {
 
     return (
         <>
+        <div className='color-back'>
             <div id='AboutUs' />
             <div className='AboutSection'>
                 <div className="WWa" data-aos="fade-up">
                     <span className="little-title">ABOUT US</span>
-                    <h2 className="big-title">We help customers <span style={{color: '#F26A1F', fontStyle:'italic'}}>grow.</span></h2>
+                    <h2 className="big-title">We help customers grow.</h2>
                     <p>At Memento Microfinance Bank, we combine technology, financial expertise and customer-focused service to provide accessible banking solutions for Nigerians.</p>
                     <br />
                     <p>Our goal is to support bigger dreams through secure, innovative and reliable financial services.</p>
@@ -31,27 +34,27 @@ function AboutUss() {
 
             <div className="coreV" data-aos="fade-up">
                 <div className="integrity" data-aos="fade-up" data-aos-delay="100">
-                    <img src={Core1} />
+                    <ShieldCheck size={48} strokeWidth={1.5} color="#C8500F" />
                     <p>Integrity</p>
                 </div>
 
                 <div className="reliability" data-aos="fade-up" data-aos-delay="200">
-                    <img src={Core2} />
+                    <BadgeCheck size={48} strokeWidth={1.5} color="#C8500F" />
                     <p>Reliability</p>
                 </div>
 
                 <div className="growth" data-aos="fade-up" data-aos-delay="300">
-                    <img src={Core3} />
+                    <TrendingUp size={48} strokeWidth={1.5} color="#C8500F" />
                     <p>Growth</p>
                 </div>
 
                 <div className="customerF" data-aos="fade-up" data-aos-delay="400">
-                    <img src={Core4} />
+                    <HeartHandshake size={48} strokeWidth={1.5} color="#C8500F" />
                     <p>Customer Focus</p>
                 </div>
 
                 <div className="innovation" data-aos="fade-up" data-aos-delay="500">
-                    <img src={Core5} />
+                    <Lightbulb size={48} strokeWidth={1.5} color="#C8500F" />
                     <p>Innovation</p>
                 </div>
 
@@ -61,7 +64,7 @@ function AboutUss() {
 
             </div>
 
-
+</div>
 
         </>
     );

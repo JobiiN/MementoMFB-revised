@@ -258,3 +258,21 @@
                  align-self: center;
                  background-color:  rgba(255, 255, 255, 0.3);
 }
+
+@media (min-width: 768px) {
+  .line-divider {
+    display: block;
+    height: 105px;
+    width: 1px;
+    align-self: center;
+    background-color: transparent;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+
+@media (min-width: 1025px){
+    .line-divider{
+                         background-color:  rgba(255, 255, 255, 0.3) !important;
+    }
+}

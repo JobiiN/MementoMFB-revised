@@ -7,15 +7,19 @@
     max-width: 1440px;
     margin: 0 auto;
     font-size: large;
+
 }
 
+.color-back2{
+    margin-top: 50px;
+}
 
 .loans-title-card .invertbigtitle {
     display: inline;
 }
 
 .loans-title-card {
-    
+    margin-top: 25px;
     text-align: center;
     left: 50%;
 }
@@ -43,7 +47,7 @@
 .Salary-loan-card {
     grid-column: 1;
     grid-row: 1;
-      background: linear-gradient(to bottom, rgb(247, 236, 225) 45%, transparent 100%);
+    background: linear-gradient(to bottom, rgb(247, 236, 225) 45%, transparent 100%);
     border-radius: 20px;
     border: 1px solid;
     border-color: #FFA552;
@@ -55,7 +59,7 @@
     justify-content: center;
     align-items: center;
 
-   
+
 }
 
 /*SME*/
@@ -73,6 +77,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+
+.Salary-loan-card, .SME-loan-card, .SME-card {
+    padding: 34px;
 }
 
 
@@ -112,8 +122,8 @@
 }
 
 /*SME*/
-.SME-loan-card img{
-     width: 185px;
+.SME-loan-card img {
+    width: 185px;
     border-radius: 100px;
 
     position: relative;
@@ -123,13 +133,13 @@
     mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
-.SME-loan-card .card-img-bubble{
+.SME-loan-card .card-img-bubble {
     background-color: rgb(97, 97, 99, 0.4);
 }
 
 
 /*Healthcare*/
-.SME-card{
+.SME-card {
     display: flex;
 }
 
@@ -147,17 +157,75 @@
 
 .SME-card .healthcare-deets {
     max-width: 650px;
-    
+
 }
-.SME-card .card-img-bubble{
+
+.SME-card .card-img-bubble {
     background-color: rgb(253, 195, 46, 0.4);
     width: 285px;
 }
 
 
-
 @media (max-width: 767px) {
     .bento-grid {
-        display: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 20px 16px;
+    }
+
+    .Salary-loan-card {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .SME-loan-card {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .SME-card {
+        grid-column: 1;
+        grid-row: 3;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .SME-card img {
+     width: 295px;
+    height: 240px;
+    }
+
+    .SME-card .card-img-bubble {
+        width: 220px;
+        height: 220px;
+    }
+
+    .card-img-wrap {
+        height: 240px;
+    }
+
+    .card-img-bubble {
+        width: 220px;
+        height: 220px;
+    }
+
+    .Salary-loan-card img,
+    .SME-loan-card img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .SME-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .SME-card .healthcare-deets {
+        order: 2;
+    }
+
+    .SME-card .card-img-wrap {
+        order: 1;
     }
 }

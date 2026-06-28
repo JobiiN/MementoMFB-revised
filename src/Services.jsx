@@ -13,7 +13,7 @@ function Services() {
             <div className='ServicesSection'>
                 <div className='services-header' data-aos="fade-up">
                     <span className='little-title'>OUR SERVICES</span>
-                    <h2 className='big-title'>Banking that fits <span className='invertbigtitle'>every kind of customer.</span></h2>
+                    <h2 className='big-title'>Banking that fits every kind of customer.</h2>
                 </div>
 
                 <div className='services-cards'>
@@ -62,53 +62,7 @@ function Services() {
                     </div>
                 </div>
 
-                <div id='Loans' />
-                <div className='LoansSection'>
-                    <div className='services-header' data-aos="fade-up">
-                        <span className='little-title'>LOANS & ASSET FINANCE</span>
-                        <h2 className='big-title'>Working capital, <span className='invertbigtitle'> when it counts.</span></h2>
-                    </div>
-
-                    <div className='loans-cards'>
-                        <div className='loan-card light-card' data-aos="fade-right">
-                            <div className='loan-text'>
-                                <h3>Salary Loans</h3>
-                                <p>Quick financing for working professionals. Cover personal needs, emergencies or opportunities without the wait</p>
-                            </div>
-                            <div className='loan-img placeholder-light' >
-                                <img src={officeMan} />
-                            </div>
-                        </div>
-
-                        <div className='loan-card dark-card' data-aos="fade-left">
-                            <div className='loan-text'>
-                                <h3>SME Loans</h3>
-                                <p>Business growth support for small and medium enterprises. Get the capital you need to expand and scale.</p>
-                            </div>
-                            <div className='loan-img placeholder-dark' >
-                                <img src={shopMan} />
-                            </div>
-                        </div>
-
-                        <div className='loan-card light-card' data-aos="fade-right">
-                            <div className='loan-text'>
-                                <h3>HealthCare Loans</h3>
-                                <p>Financing for clinics, pharmacies, and healthcare providers. Equip your facility, expand services, or manage cash flow.</p>
-                            </div>
-                            <div className='loan-img placeholder-light' >
-                                <img src={healthMan} />
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className='licensed-loan'>
-                        <span>Licensed & Protected</span>
-                        <img className="cbnLogo" src={cbn} />
-                        <img className="ndicLogo" src={ndic} />
-                    </div>
-
-                </div>
-            </div>
+                  </div>
         </>
     )
 }

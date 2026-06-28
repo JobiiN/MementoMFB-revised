@@ -1,7 +1,7 @@
 /* ── Outer shell ─────────────────────────────────────────────────────────── */
 
 .footer-logo {
-  width: 180px;
+  width: 215px;
   height: 50px;
 }
 
@@ -9,7 +9,6 @@
   background-color: hsl(33, 53%, 95%);
   border-top: 1px solid #e7dfd4;
   padding: 56px 0 0;
-  margin-top: 10px;
 }
 
 .mfb-footer__container {
@@ -18,7 +17,7 @@
   padding: 0 28px;
 }
 
-/* ── Three-column row ────────────────────────────────────────────────────── */
+/* ── Row ─────────────────────────────────────────────────────────── */
 
 .mfb-footer__row {
   display: grid;
@@ -46,13 +45,7 @@
   margin: 14px 0 18px;
 }
 
-/* ── Col 2 · Contact cards ───────────────────────────────────────────────── */
-
-.mfb-footer__cards {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
+/* ── Col 2 & 3 · Cards ───────────────────────────────────────────────────── */
 
 .mfb-footer__card {
   background: #ffffff;
@@ -82,6 +75,9 @@
   letter-spacing: 0.08em;
   color: #6b6f7b;
   margin: 0 0 4px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .mfb-footer__card-value {
@@ -103,25 +99,6 @@
   color: #c8500f;
 }
 
-/* ── Col 3 · Map ─────────────────────────────────────────────────────────── */
-
-.mfb-footer__map {
-  height: 200px;
-  max-width: 200px;
-  border-radius: 100px;
-  overflow: hidden;
-  border: 1px solid #e7dfd4;
-  background: #e8e0d6;
-}
-
-.mfb-footer__map iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  display: block;
-  filter: saturate(0.85);
-}
-
 .mfb-footer__copyright {
   text-align: center;
   padding: 20px 0;
@@ -130,21 +107,18 @@
   font-size: 12.5px;
 }
 
-.mfb-footer__map-col {
-    display: flex;
-    justify-content: center;
-}
-
 /* ── Responsive ──────────────────────────────────────────────────────────── */
 
 @media (max-width: 980px) {
   .mfb-footer__row {
     grid-template-columns: 1fr 1fr;
-    gap: 28px;
+    column-gap: 28px;
+    row-gap: 10px;
   }
 
-  .mfb-footer__map-col {
-    grid-column: 1 / -1;
+  .mfb-footer__row > div:nth-child(3) {
+    grid-column: 2;
+    grid-row: 2;
   }
 }
 
@@ -162,7 +136,8 @@
     gap: 24px;
   }
 
-  .mfb-footer__map-col {
+  .mfb-footer__row > div:nth-child(3) {
     grid-column: auto;
+    grid-row: auto;
   }
 }
