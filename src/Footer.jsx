@@ -61,7 +61,7 @@ function Footee() {
 
           </div>
         </div>
-        <img src={pattern} style={{ width: '100%', display: 'block', height: '60px', objectFit: 'cover' }} />    </footer>
+        <img src={pattern} style={{ width: '100%', display: 'block', height: '60px', objectFit: 'cover', opacity: '80%' }} />    </footer>
     </>
   );
 }

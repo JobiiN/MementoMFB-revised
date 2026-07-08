@@ -27,19 +27,19 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;   /* changed from center */
+    justify-content: space-between;   
     align-items: center;
-    padding: 100px 20px 10px;            /* remove bottom padding */
+    padding: 100px 20px 10px;         
 }
 
 .herodiv {
     text-align: center;
     width: 100%;
     max-width: 900px;
-    flex: 1;                          /* add this */
+    flex: 1;                          
     display: flex;
     flex-direction: column;
-    justify-content: center;          /* keeps herodiv content vertically centered */
+    justify-content: center;          
 }
 
 .heroh1 {
