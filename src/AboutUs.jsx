@@ -4,7 +4,7 @@ import Core3 from './assets/growth.png'
 import Core4 from './assets/customerF.png'
 import Core5 from './assets/innovation.png'
 import whcG from './assets/whcG.png'
-
+import whcGMobile from './assets/whcGMobile.png'
 import { ShieldCheck, BadgeCheck, TrendingUp, HeartHandshake, Lightbulb } from 'lucide-react'
 
 
@@ -20,10 +20,13 @@ function AboutUss() {
                         <br />
                         <div className='grow'>
                             <div className='aboutimg'>
-                                <img src={whcG} className='aboutimgfr' />
+                                <picture>
+                                    <source media="(max-width: 768px)" srcSet={whcGMobile} />
+                                    <img src={whcG} className='aboutimgfr' />
+                                </picture>
                             </div>
 
-                           <div className='about-heading'> <h2 className="big-title">We help customers grow.</h2></div>
+                            <div className='about-heading'> <h2 className="big-title">We help customers grow.</h2></div>
 
                             <div className='about-text'>
 
