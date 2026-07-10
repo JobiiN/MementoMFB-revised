@@ -21,7 +21,6 @@ function AboutUss() {
                         <div className='grow'>
                             <div className='aboutimg'>
                                 <picture>
-                                    <source media="(max-width: 768px)" srcSet={whcGMobile} />
                                     <img src={whcG} className='aboutimgfr' />
                                 </picture>
                             </div>
