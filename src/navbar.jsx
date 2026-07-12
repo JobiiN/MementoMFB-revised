@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import logo from './assets/logoR2.png'
+import logo from './assets/logoR.png'
 
 function NavHead({ scrolled }) {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -39,7 +39,6 @@ function NavHead({ scrolled }) {
         <div className='NaRow'>
           <a className='logoArea'>
             <img className="logo" src={logo} />
-            <span className='logotext'><b>Memento</b> <small>Microfinance Bank</small></span>
           </a>
 
           <div className='navBarLinks'>

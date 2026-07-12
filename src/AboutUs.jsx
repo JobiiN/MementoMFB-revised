@@ -43,8 +43,8 @@ function AboutUss() {
 
                 <div className='AboutSection2'>
                     <div className='WWa' data-aos="fade-up">
-                        <h2 className="big-title">A fintech-driven bank, built on trust.</h2>
-                        <p className='fintech-driven'>Memento Microfinance Bank is a fintech-driven microfinance institution committed to delivering accessible and innovative banking services to individuals and businesses across Nigeria. We help our customers build finance stability & CREATE OPPORTUNITIES for growth.</p>
+                        <h2 className="big-title">A technology-driven bank, built on trust.</h2>
+                        <p className='fintech-driven'>We are a technology-driven microfinance institution committed to delivering accessible and innovative banking services to individuals and businesses across Nigeria. We help our customers build finance stability & CREATE OPPORTUNITIES for growth.</p>
                     </div>
 
                     <div className="coreV" data-aos="fade-up">

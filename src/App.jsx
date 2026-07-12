@@ -12,6 +12,7 @@ import Services from "./Services"
 import Jsun from "./jsun"
 import Footee from "./Footer"
 import Loans from './Loans'
+import FAQ from './FAQ'
 
 function App() {
 
@@ -35,7 +36,7 @@ function App() {
       <Hero />
       <AboutUss />
       <Services />
-      <Loans/>
+      <FAQ/>
       <Jsun />
       <Footee />
     </>

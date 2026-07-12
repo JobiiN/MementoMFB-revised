@@ -2,7 +2,7 @@ import video from './assets/video2.mp4'
 import videoWebm from './assets/video2.webm'
 import PosterImg from './assets/poster.png'
 import cbn from './assets/cbnlogo.png'
-import ndic from './assets/ndicLogo.png'
+import ndic from './assets/ndicLogo_dark.png'
 import p1 from './assets/person1.avif'
 import p2 from './assets/person2.avif'
 import p3 from './assets/person3.avif'
@@ -11,18 +11,6 @@ function Hero() {
     return (
         <>
             <section className="hero">
-                <video
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                    preload="auto"
-                    poster={PosterImg}
-                    className="hero-video"
-                >
-                    <source src={videoWebm} type="video/webm" />
-                    <source src={video} type="video/mp4" />
-                </video>
 
                 <div className="hero-overlay" />
 
@@ -57,8 +45,10 @@ function Hero() {
 
                         <div className='licensed'>
                             <span>Licensed & Protected</span>
-                            <img className="cbnLogo" src={cbn} />
-                            <img className="ndicLogo" src={ndic} />
+                            <pic className='licensedIMAGES'>
+                                <img className="cbnLogo" src={cbn} />
+                                <img className="ndicLogo" src={ndic} />
+                            </pic>
                         </div>
 
                         <div className="line-divider">

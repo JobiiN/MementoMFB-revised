@@ -1,7 +1,7 @@
 /* ── Outer shell ─────────────────────────────────────────────────────────── */
 
 .footer-logo {
-  width: 215px;
+
   height: 50px;
 }
 
@@ -23,7 +23,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
-  align-items: start;
+  align-items: stretch;
   padding-bottom: 48px;
 }
 
@@ -35,15 +35,10 @@
   gap: 10px;
   text-decoration: none;
   color: #1a1f2c;
+  height: 100%;
 }
 
-.mfb-footer__tagline {
-  color: #6b6f7b;
-  font-size: 13.5px;
-  line-height: 1.55;
-  max-width: 300px;
-  margin: 14px 0 18px;
-}
+
 
 /* ── Col 2 & 3 · Cards ───────────────────────────────────────────────────── */
 
@@ -100,13 +95,27 @@
 }
 
 .mfb-footer__copyright {
-  text-align: center;
+  text-align: right;
   padding: 20px 0;
   border-top: 1px solid #e7dfd4;
   color: #6b6f7b;
   font-size: 12.5px;
 }
 
+.footerAbout{
+   text-align: left;
+  padding: 20px 0;
+
+  color: #6b6f7b;
+  font-size: 12.5px;
+}
+.footerAbou{
+   text-align: left;
+  padding: 20px 0;
+  border-top: 1px solid #e7dfd4;
+  color: #6b6f7b;
+  font-size: 12.5px;
+}
 /* ── Responsive ──────────────────────────────────────────────────────────── */
 
 @media (max-width: 980px) {
@@ -141,3 +150,5 @@
     grid-row: auto;
   }
 }
+
+

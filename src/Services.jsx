@@ -57,8 +57,8 @@ function Services() {
                                 <circle cx="12" cy="15" r="2" stroke="#FDC32E" strokeWidth="2" />
                             </svg>
                         </div>
-                        <h3>Agency Banking</h3>
-                        <p>Convenient banking services closer to your community.</p>
+                        <h3>Investments</h3>
+                        <p>Grow your money with our range of diversified and affordable investment plans.</p>
                     </div>
                 </div>
 
