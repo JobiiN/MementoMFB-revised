@@ -7,7 +7,7 @@ function jsun() {
         < section className="jsun-section">
 
 
-            <div className="jsun-animation-wrap" style={{background: 'linear-gradient(to bottom, transparent 0%, rgb(248, 151, 52, 0.2) 95%, rgb(249, 243, 235) 100%)'}}>
+            <div className="jsun-animation-wrap">
                 <div className="jsun-title-overlay">
                     <h1 className='jsun-big-title' style={{fontSize: '55px'}}>Banking for <span className='jsun-invertbigtitle'>Bigger Dreams.</span></h1>
                 </div>

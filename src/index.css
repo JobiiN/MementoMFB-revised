@@ -74,8 +74,8 @@ a {
 }
 
 .NavHead.scrolled {
-  border-bottom-color: #E7DFD4;
-  background-color: rgb(231, 223, 212, 0.8);
+  border-bottom-color: rgba(107, 111, 123, 0.5);
+  background-color: white;
 }
 
 .NaRow {

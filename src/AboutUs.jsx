@@ -17,7 +17,7 @@ function AboutUss() {
                 <div className='AboutSection'>
                     <div className="WWa" data-aos="fade-up">
                         <span className="little-title">ABOUT US</span>
-                        <br />
+                      
                         <div className='grow'>
                             <div className='aboutimg'>
                                 <picture>

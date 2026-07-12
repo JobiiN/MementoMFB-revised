@@ -2,7 +2,8 @@
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1000px;
+    max-width: 1200px;
+    font-weight: 300;
 }
 
 .little-title,
@@ -15,7 +16,7 @@
     background-color: #FAFAFA;
     margin: 10px;
     padding: 25px;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .question {
@@ -27,6 +28,7 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 .up {
