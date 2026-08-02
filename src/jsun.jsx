@@ -9,7 +9,8 @@ function jsun() {
 
             <div className="jsun-animation-wrap">
                 <div className="jsun-title-overlay">
-                    <h1 className='jsun-big-title' style={{fontSize: '55px'}}>Banking for <span className='jsun-invertbigtitle'>Bigger Dreams.</span></h1>
+                    <h1 className='jsun-big-title'>Ready to Bank for your Bigger Dreams?</h1>
+                    <a href="#contact" className="contact">Contact Us</a>
                 </div>
 
                 <Player

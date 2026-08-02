@@ -6,8 +6,8 @@
     font-weight: 300;
 }
 
-.little-title,
-.big-title {
+.FAQ .little-title,
+.FAQ .big-title {
     display: block;
     text-align: center;
 }

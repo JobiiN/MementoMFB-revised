@@ -62,9 +62,9 @@ a {
 
 @supports (backdrop-filter: blur(12px)) or (-webkit-backdrop-filter: blur(12px)) {
   .NavHead {
-    background-color: transparent ;
-     backdrop-filter: saturate(140%) blur(12px);
-  -webkit-backdrop-filter: saturate(140%) blur(12px);
+    background-color: transparent;
+    backdrop-filter: saturate(140%) blur(12px);
+    -webkit-backdrop-filter: saturate(140%) blur(12px);
   }
 }
 
@@ -100,7 +100,7 @@ a {
 
 .logo {
   height: 40px;
-  
+
 }
 
 .logotext {
@@ -198,13 +198,14 @@ nav ul {
 .hamburger {
   -webkit-appearance: none;
   appearance: none;
-  color: white;
+  color: #F26A1F;
+  font-weight: bolder;
 }
 
 .mobileMenu {
   display: flex;
   flex-direction: column;
-
+background-color: #C8500F;
 
   overflow: hidden;
   max-height: 0;
@@ -271,9 +272,15 @@ nav ul {
 
 .jsun-title-overlay {
   position: absolute;
-  top: 10%;
+  top: 0;
+  height: 30%; /* Adjust this to match the animation’s empty top area */
   width: 100%;
-  text-align: center;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 1;
   line-height: normal;
 }
@@ -289,8 +296,12 @@ nav ul {
 
 .jsun-big-title {
   color: #1a1f2c;
-  font-size: 45px;
+  font-size: clamp(1.8rem, 4vw, 3.125rem);
+  line-height: 1.1;
   font-weight: 800;
+  margin: 0 0 15px;
+  max-width: 800px;
+  text-align: center;
 }
 
 .jsun-invertbigtitle {
@@ -314,6 +325,25 @@ nav ul {
     line-height: 1.1;
   }
 }
+@media (max-width: 1024px) {
+  .jsun-section {
+    margin-top: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .jsun-title-overlay {
+    left: 50%;
+    width: max-content;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  .jsun-big-title {
+    white-space: nowrap;
+    max-width: none; /* removes the 760px constraint */
+  }
+}
 
 
 .nav-active {
@@ -323,4 +353,29 @@ nav ul {
 
 .nav-active::after {
   width: 100% !important;
+}
+
+
+
+.contact {
+  background-color: rgba(242, 101, 34, 1);
+  width: fit-content;
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border-radius: 40px;
+  margin: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  border-bottom: solid 5px rgba(0, 0, 0, 0.1);
+}
+
+.SoSc{
+  color: rgba(242, 101, 34, 1);
+  background-color: white;
 }

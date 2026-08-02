@@ -3,6 +3,8 @@
     align-items: center;
     gap: 50px;
 
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .color-back {
@@ -15,15 +17,32 @@
 }
 
 .little-title {
-    color: #C8500F;
+    color: white;
     font-weight: light;
-    text-align: center;
+    background-color: black;
+    border-radius: 20px;
+    padding: 7px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: small;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45em;
+}
+
+.little-title-logo {
+  height: 1em; /* exactly the same height as the pill text */
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 .big-title {
     color: #1a1f2c;
     font-size: 45px;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .invertbigtitle {
@@ -116,7 +135,7 @@ p {
 
 }
 
-.about-heading .big-title{
+.about-heading .big-title {
     text-align: left;
 }
 
@@ -155,8 +174,21 @@ p {
 .fintech-driven {
     width: 1250px;
     text-align: center;
+    margin-top: 30px;
+}
+
+
+.marWom {
+    width: 1066px;
+    height: 336px;
+    border-radius: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 
 }
+
+
+
 
 .coreV {
     display: flex;
@@ -226,9 +258,9 @@ p {
         font-size: 13px;
     }
 
-    .about-heading .big-title{
-    text-align: center;
-}
+    .about-heading .big-title {
+        text-align: center;
+    }
 }
 
 @media (max-width: 1024px) {

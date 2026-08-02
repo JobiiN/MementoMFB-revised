@@ -44,7 +44,7 @@ function NavHead({ scrolled }) {
           <div className='navBarLinks'>
             <a href='#home' className={linkClass('home')}>Home</a>
             <a href='#AboutUs' className={linkClass('AboutUs')}>About Us</a>
-            <a href='#Services' className={linkClass('Services')}>Services & Loans</a>
+            <a href='#Services' className={linkClass('Services')}>Services</a>
             <a href='#contact' className={linkClass('contact')}>Contact Us</a>
           </div>
 
@@ -61,7 +61,7 @@ function NavHead({ scrolled }) {
         <div className={`mobileMenu ${menuOpen ? 'mobileMenu--open' : ''}`}>
           <a href='#home' onClick={() => setMenuOpen(false)}>Home</a>
           <a href='#AboutUs' onClick={() => setMenuOpen(false)}>About Us</a>
-          <a href='#Services' onClick={() => setMenuOpen(false)}>Services & Loans</a>
+          <a href='#Services' onClick={() => setMenuOpen(false)}>Services</a>
           <a href='#contact' onClick={() => setMenuOpen(false)}>Contact Us</a>
         </div>
       </div>

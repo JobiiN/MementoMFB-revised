@@ -1,8 +1,19 @@
 .ServicesSection {
     padding: 100px 60px;
-    padding-bottom: 0;
-    max-width: 1240px;
+
+    max-width: 100%;
     margin: 0 auto;
+     background: linear-gradient(180deg,
+      #EE6321 0%,
+      #030100 100%);
+}
+.ServicesSection .little-title{
+    color: black;
+    background-color: white;
+}
+.ServicesSection .big-title{
+    color: white;
+    font-size: 50px;
 }
 
 .services-header {
@@ -44,17 +55,18 @@
 }
 
 .service-card h3 {
-    font-size: 18px;
-    font-weight: 700;
-    color: #1a1f2c;
+    font-size: 19px;
+    font-weight: 600;
+    color: white;
     margin: 0;
 }
 
 .service-card p {
     font-size: 14px;
-    color: #3B4252;
+    color: white;
     line-height: 1.6;
     margin: 0;
+    font-weight: lighter;
 }
 
 @media (max-width: 768px) {
@@ -71,28 +83,33 @@
         max-width: 100%;
         width: 100%;
     }
+
+    .ServicesSection .big-title{
+    font-size: 32px;
+}
 }
 
 .savings-icon {
-    background-color: rgba(243, 108, 54, 0.12);
+    background-color: #F5F0EA;
 }
 
 .current-icon {
-    background-color: rgba(97, 97, 99, 0.12);
+    background-color: #F0F0F0;
 }
 
 .loans-icon {
-    background-color: rgba(248, 151, 52, 0.12);
+    background-color: #FDF4EC;
 }
 
 .agent-icon {
-    background-color: rgba(253, 195, 46, 0.12);
+    background-color: #FFFBF0;
 }
 
-.service-card:nth-child(1) { background-color: #F5F0EA; }
-.service-card:nth-child(2) { background-color: #F0F0F0; }
-.service-card:nth-child(3) { background-color: #FDF4EC; }
-.service-card:nth-child(4) { background-color: #FFFBF0; }
+
+
+.service-card{
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
 
 

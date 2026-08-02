@@ -12,7 +12,7 @@ function Services() {
             <div id='Services' />
             <div className='ServicesSection'>
                 <div className='services-header' data-aos="fade-up">
-                    <span className='little-title'>OUR SERVICES</span>
+                    <span className='little-title'>💡OUR SERVICES</span>
                     <h2 className='big-title'>Banking that fits every kind of customer.</h2>
                 </div>
 

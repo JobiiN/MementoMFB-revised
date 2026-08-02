@@ -18,7 +18,7 @@ function Hero() {
 
                     <div className="herodiv">
                         <div data-aos="fade-up" data-aos-delay="100">
-                            <strong className="heroh1">Banking for</strong>
+                            <strong className="heroh1">Banking for </strong>
                             <small className="heroh2">Bigger Dreams.</small>
                         </div>
                         <div data-aos="fade-up" data-aos-delay="200">
@@ -27,6 +27,11 @@ function Hero() {
                                 banking solutions designed to help individuals,
                                 traders, salary earners and SMEs grow confidently.
                             </p>
+                        </div>
+
+                        <div className='CTAs' data-aos="fade-up" data-aos-delay="100">
+                            <a href="#contact" className="contact">Contact Us</a>
+                            <a href="#Services" className="contact SoSc">See Our Services</a>
                         </div>
 
                     </div>

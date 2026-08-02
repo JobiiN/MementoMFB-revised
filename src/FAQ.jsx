@@ -129,7 +129,7 @@ const faqs = [
 
     return (
         <>
-            <div className='FAQ'>
+            <div className='FAQ' data-aos="fade-up" data-aos-delay="200">
                 <span className='little-title'>FAQs</span>
                 <h2 className='big-title'>Frequently Asked Questions</h2>
 
