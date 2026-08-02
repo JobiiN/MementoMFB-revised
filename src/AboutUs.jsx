@@ -5,7 +5,7 @@ import Core4 from './assets/customerF.png'
 import Core5 from './assets/innovation.png'
 import whcG from './assets/whcG.png'
 import whcGMobile from './assets/whcGMobile.png'
-import marWom from './assets/marWom.jpg'
+import marWom from './assets/marWom.png'
 import pillLogo from './assets/logoR2.png'
 import { ShieldCheck, BadgeCheck, TrendingUp, HeartHandshake, Lightbulb } from 'lucide-react'
 
@@ -21,7 +21,7 @@ function AboutUss() {
                     <div className='WWa' data-aos="fade-up">
                         <span className="little-title">
                             <img className="little-title-logo" src={pillLogo} alt="" />
-                            ABOUT US
+                            About Us
                         </span>
                         <h2 className="big-title">Empowering Dreams. Driving Growth.</h2>
                         <p className='fintech-driven'>At Memento Microfinance Bank, we combine modern technology, financial expertise, and customer-focused service to provide accessible

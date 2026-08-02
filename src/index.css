@@ -361,7 +361,7 @@ nav ul {
 
 .contact {
   background-color: rgba(242, 101, 34, 1);
-  width: fit-content;
+  width: 220px;
   color: white;
   text-decoration: none;
   display: inline-flex;

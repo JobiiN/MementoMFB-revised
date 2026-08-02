@@ -277,6 +277,8 @@ p {
         margin-left: 10px;
         margin-right: 10px;
     }
+
+   
 }
 
 
@@ -294,6 +296,10 @@ p {
         margin-right: auto;
         padding-left: 5PX;
         padding-right: 5PX;
+    }
+
+     .marWom {
+        max-width: 90%;
     }
 }
 
