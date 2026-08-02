@@ -10,8 +10,12 @@ function jsun() {
             <div className="jsun-animation-wrap">
                 <div className="jsun-title-overlay">
                     <h1 className='jsun-big-title'>Ready to Bank for your Bigger Dreams?</h1>
-                    <a href="#contact" className="contact">Contact Us</a>
-                </div>
+                    <a href="#contact" className="contact">
+                        <span className="roll-wrap">
+                            <span className="roll-text top">Contact Us</span>
+                            <span className="roll-text bottom">Contact Us</span>
+                        </span>
+                    </a>                </div>
 
                 <Player
                     autoplay

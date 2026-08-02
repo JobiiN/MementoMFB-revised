@@ -30,8 +30,18 @@ function Hero() {
                         </div>
 
                         <div className='CTAs' data-aos="fade-up" data-aos-delay="100">
-                            <a href="#contact" className="contact">Contact Us</a>
-                            <a href="#Services" className="contact SoSc">See Our Services</a>
+                            <a href="#contact" className="contact">
+                                <span className="roll-wrap">
+                                    <span className="roll-text top">Contact Us</span>
+                                    <span className="roll-text bottom">Contact Us</span>
+                                </span>
+                            </a>
+                            <a href="#Services" className="contact SoSc">
+                                <span className="roll-wrap">
+                                    <span className="roll-text top">See Our Services</span>
+                                    <span className="roll-text bottom">See Our Services</span>
+                                </span>
+                            </a>
                         </div>
 
                     </div>

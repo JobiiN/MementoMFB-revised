@@ -99,7 +99,7 @@ a {
 }
 
 .logo {
-  height: 40px;
+  height: 35px;
 
 }
 
@@ -205,7 +205,7 @@ nav ul {
 .mobileMenu {
   display: flex;
   flex-direction: column;
-background-color: #C8500F;
+  background-color: #C8500F;
 
   overflow: hidden;
   max-height: 0;
@@ -273,7 +273,8 @@ background-color: #C8500F;
 .jsun-title-overlay {
   position: absolute;
   top: 0;
-  height: 30%; /* Adjust this to match the animation’s empty top area */
+  height: 30%;
+  /* Adjust this to match the animation’s empty top area */
   width: 100%;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -325,6 +326,7 @@ background-color: #C8500F;
     line-height: 1.1;
   }
 }
+
 @media (max-width: 1024px) {
   .jsun-section {
     margin-top: 80px;
@@ -341,7 +343,8 @@ background-color: #C8500F;
 
   .jsun-big-title {
     white-space: nowrap;
-    max-width: none; /* removes the 760px constraint */
+    max-width: none;
+    /* removes the 760px constraint */
   }
 }
 
@@ -354,7 +357,6 @@ background-color: #C8500F;
 .nav-active::after {
   width: 100% !important;
 }
-
 
 
 .contact {
@@ -373,9 +375,55 @@ background-color: #C8500F;
   cursor: pointer;
   white-space: nowrap;
   border-bottom: solid 5px rgba(0, 0, 0, 0.1);
+
+ 
+  overflow: hidden;
+  perspective: 500px;
 }
 
-.SoSc{
+.SoSc {
   color: rgba(242, 101, 34, 1);
   background-color: white;
+}
+
+/* roll effect */
+.roll-wrap {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  /* move clipping here instead of on .contact if needed */
+}
+
+.roll-text {
+  display: block;
+  text-align: center;
+  transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1),
+    opacity 0.45s cubic-bezier(0.65, 0, 0.35, 1);
+  backface-visibility: hidden;
+}
+
+/* top text stays in normal flow — this is what gives the button its size */
+.roll-text.top {
+  position: relative;
+  transform: translateY(0) rotateX(0deg);
+}
+
+/* bottom text is absolutely positioned over the top text */
+.roll-text.bottom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(150%) rotateX(-90deg);
+  transform-origin: bottom center;
+}
+
+.contact:hover .roll-text.top {
+  transform: translateY(-150%) rotateX(90deg);
+  transform-origin: top center;
+  opacity: 0;
+}
+
+.contact:hover .roll-text.bottom {
+  transform: translateY(0) rotateX(0deg);
 }
