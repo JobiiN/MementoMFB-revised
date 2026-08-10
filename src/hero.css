@@ -33,13 +33,30 @@
 }
 
 .herodiv {
-    text-align: center;
+    text-align: left;
     width: 100%;
     max-width: 900px;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.heropictext {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    flex: 1;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Fill the space above the stats so the text can center vertically. */
+.heropictext .herodiv {
+    align-self: stretch;
 }
 
 .heroh1 {
@@ -63,15 +80,28 @@
 
 }
 
-.herodiv p {
+.herodiv h6 {
     color: #4f5055;
     font-size: 18px;
     line-height: 1.6;
     max-width: 440px;
     text-wrap: pretty;
-    margin: 0 auto;
     margin-top: 35px;
-    font-weight: 400;
+    font-weight: normal;
+}
+
+
+.herodiv2 {
+    position: relative;
+}
+
+.herobigL {}
+
+.heropic {
+    position: absolute;
+    right:-4%;
+    bottom: 2%;
+    height: 125%;
 }
 
 .hero-stats {
@@ -85,15 +115,16 @@
     width: 90%;
     max-width: 1400px;
     padding: 20px 40px;
+
+   
 }
 
 
 /*CTAS*/
-.CTAs{
+.CTAs {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    align-items: left;
     gap: 16px;
     margin-top: 40px;
 }
@@ -123,6 +154,7 @@
 .licensed span,
 .disbursed span {
     color: #1A1F2C !important;
+
 }
 
 .total-cust,
@@ -176,15 +208,15 @@
 .ndicLogo {
     margin-top: auto;
     margin-bottom: auto;
-   max-height: 80px;
+    max-height: 80px;
     margin-left: 10px;
 }
 
 .licensedIMAGES .ndicLogo {
-  width: 150px;
-  height: auto;
-  max-height: none;
-  margin-left: 10px;
+    width: 150px;
+    height: auto;
+    max-height: none;
+    margin-left: 10px;
 }
 
 .disbursed {
@@ -251,7 +283,7 @@
         padding-left: 0;
     }
 
-    .herodiv p {
+    .herodiv h6 {
         font-size: 14px;
         max-width: 100%;
     }
@@ -309,38 +341,41 @@
         padding-top: 10px;
     }
 
-    .total-cust, .disbursed{
+    .total-cust,
+    .disbursed {
         display: none;
     }
 
-    .hero-stats{
+    .hero-stats {
         background-color: transparent;
     }
 }
 
 
 
-.line-divider {
-    height: 85px;
-    width: 2px;
-    align-self: center;
-    background-color: rgba(255, 255, 255, 0.3);
-}
 
 @media (min-width: 768px) {
-    .line-divider {
-        display: block;
-        height: 105px;
-        width: 1px;
-        align-self: center;
-        background-color: transparent;
-        margin-left: 3px;
-        margin-right: 3px;
-    }
+  
 }
 
 @media (min-width: 1025px) {
-    .line-divider {
-        background-color: black !important;
+    .hero-stats {
+        display: grid;
+        grid-template-columns: 1fr 1px 1fr 1px 1fr;
+        justify-content: initial;
     }
+
+    .total-cust {
+        justify-self: start;
+    }
+
+    .licensed {
+        justify-self: center;
+    }
+
+    .disbursed {
+        justify-self: end;
+    }
+
+   
 }

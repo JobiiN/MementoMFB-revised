@@ -17,7 +17,7 @@ function FAQ() {
         <>
             <div className='FAQ'>
                 <span className='little-title'>FAQs</span>
-                <h2 className='big-title'>Frequently Asked Questions</h2>
+                <h2 className='big-title sub-heading'>Frequently Asked Questions</h2>
 
                 <div className='qcon'>
                     <div className='mqcon'>
@@ -131,7 +131,7 @@ const faqs = [
         <>
             <div className='FAQ' data-aos="fade-up" data-aos-delay="200">
                 <span className='little-title'>FAQs</span>
-                <h2 className='big-title'>Frequently Asked Questions</h2>
+                <h2 className='big-title sub-heading'>Frequently Asked Questions</h2>
 
                 {faqs.map((faq, i) => {
                     const isOpen = openIndex === i;

@@ -6,7 +6,7 @@
 
 
 * {
-  font-family: 'geist';
+  font-family: "Geist";
 }
 
 * {
@@ -46,6 +46,10 @@ body {
 a {
   color: inherit;
   text-decoration: none
+}
+
+.small-text {
+  font-weight: normal !important;
 }
 
 .NavHead {
@@ -263,27 +267,27 @@ nav ul {
 }
 
 .jsun-animation-wrap {
-  width: 100vw;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 489px;
+  margin: 0 auto;
   overflow: hidden;
-  margin-left: calc(-50vw + 50%);
   line-height: 0;
-  position: relative;
+  background: linear-gradient(180deg, #F26A1F 0%, #7A2E0E 100%);
+  border-radius: 40px;
+  margin-bottom: 10px;
 }
 
 .jsun-title-overlay {
-  position: absolute;
-  top: 0;
-  height: 30%;
-  /* Adjust this to match the animation’s empty top area */
-  width: 100%;
   padding: 12px 20px;
+  margin-bottom: 30px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 1;
   line-height: normal;
+  text-align: center;
 }
 
 .jsun-header {
@@ -297,12 +301,11 @@ nav ul {
 
 .jsun-big-title {
   color: #1a1f2c;
-  font-size: clamp(1.8rem, 4vw, 3.125rem);
   line-height: 1.1;
-  font-weight: 800;
   margin: 0 0 15px;
   max-width: 800px;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .jsun-invertbigtitle {
@@ -311,8 +314,9 @@ nav ul {
   padding-bottom: 10px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .jsun-animation-wrap {
+    width: calc(100% - 40px);
     line-height: normal;
   }
 
@@ -321,10 +325,6 @@ nav ul {
     padding: 0 20px 16px;
   }
 
-  .jsun-big-title {
-    font-size: xx-large;
-    line-height: 1.1;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -334,13 +334,6 @@ nav ul {
 }
 
 @media (min-width: 1024px) {
-  .jsun-title-overlay {
-    left: 50%;
-    width: max-content;
-    transform: translateX(-50%);
-    text-align: center;
-  }
-
   .jsun-big-title {
     white-space: nowrap;
     max-width: none;
@@ -376,7 +369,7 @@ nav ul {
   white-space: nowrap;
   border-bottom: solid 5px rgba(0, 0, 0, 0.1);
 
- 
+
   overflow: hidden;
   perspective: 500px;
 }
@@ -426,4 +419,17 @@ nav ul {
 
 .contact:hover .roll-text.bottom {
   transform: translateY(0) rotateX(0deg);
+}
+
+
+.sub-heading {
+  font-size: 44px;  font-weight: 600;
+  font-style: semi-bold;
+}
+
+
+@media (max-width: 1024px) {
+.sub-heading {
+    font-size: 32px;
+}
 }

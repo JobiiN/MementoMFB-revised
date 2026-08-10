@@ -41,6 +41,9 @@
 
 .big-title {
     color: #1a1f2c;
+}
+
+.big-title:not(.sub-heading) {
     font-size: 45px;
     font-weight: 700;
 }
@@ -69,7 +72,7 @@
         width: 350px;
     }
 
-    .big-title {
+    .big-title:not(.sub-heading) {
         font-size: xx-large;
     }
 
@@ -89,7 +92,6 @@
 
 p {
     color: #3B4252;
-    font-size: large;
 }
 
 .WWa {
@@ -101,7 +103,6 @@ p {
 }
 
 .WWa p {
-    font-size: larger;
     margin-left: auto;
     margin-right: auto;
 }
@@ -175,6 +176,7 @@ p {
     width: 1250px;
     text-align: center;
     margin-top: 30px;
+    font-size: 18px;
 }
 
 
@@ -184,6 +186,8 @@ p {
     border-radius: 40px;
     margin-top: 50px;
     margin-bottom: 50px;
+    object-fit: cover;
+    object-position:center 35%;
 
 }
 

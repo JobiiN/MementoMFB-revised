@@ -13,6 +13,9 @@
 }
 .ServicesSection .big-title{
     color: white;
+}
+
+.ServicesSection .big-title:not(.sub-heading){
     font-size: 50px;
 }
 
@@ -56,7 +59,7 @@
 
 .service-card h3 {
     font-size: 19px;
-    font-weight: 600;
+    font-weight: 500;
     color: white;
     margin: 0;
 }
@@ -64,9 +67,9 @@
 .service-card p {
     font-size: 14px;
     color: white;
-    line-height: 1.6;
+    line-height: 22.6px;
     margin: 0;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 @media (max-width: 768px) {
@@ -84,26 +87,12 @@
         width: 100%;
     }
 
-    .ServicesSection .big-title{
+    .ServicesSection .big-title:not(.sub-heading){
     font-size: 32px;
 }
 }
 
-.savings-icon {
-    background-color: #F5F0EA;
-}
 
-.current-icon {
-    background-color: #F0F0F0;
-}
-
-.loans-icon {
-    background-color: #FDF4EC;
-}
-
-.agent-icon {
-    background-color: #FFFBF0;
-}
 
 
 

@@ -101,7 +101,7 @@
 
 .mfb-footer__copyright {
   text-align: right;
-  padding: 20px 0;
+  padding: 30px 0;
   border-top: 1px solid #e7dfd4;
   color: #6b6f7b;
   font-size: 12.5px;
@@ -109,19 +109,22 @@
 
 .footerAbout {
   text-align: left;
-  padding: 20px 0;
+  padding:  0;
+  padding-bottom: 15px;
+   line-height: 20px;
+   white-space: pre-line;
 
   color:
     #6B6F7B;
-  font-size: 12.5px;
+  font-size: 12px;
 }
 
 .footerAbou {
   text-align: left;
-  padding: 20px 0;
-  border-top: 1px solid #e7dfd4;
+  padding: 5px 0;
   color: #6b6f7b;
   font-size: 12.5px;
+ 
 }
 
 /* ── Responsive ──────────────────────────────────────────────────────────── */
