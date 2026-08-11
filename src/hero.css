@@ -349,6 +349,46 @@
     .hero-stats {
         background-color: transparent;
     }
+
+    .heropictext{
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+ width: 90%;
+    }
+
+    .heroh1, .heroh2, .herodiv h6{
+        text-align: center;
+        align-items: center;
+
+    }
+    
+    .herodiv h6{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .herodiv{
+        text-align: center;
+    }
+/*
+    .herodiv2{
+        max-width: 430px;
+    }
+
+    
+
+    .herodiv2{
+
+    }
+    .herobigL{
+       max-height: 10px;
+     
+    }
+    .heropic{
+         position: relative;
+    }
+         */
 }
 
 
