@@ -7,7 +7,7 @@ import p1 from './assets/person1.avif'
 import p2 from './assets/person2.avif'
 import p3 from './assets/person3.avif'
 import woman from './assets/agent.png'
-import bigLog from './assets/rectangle.png'
+import bigLog from './assets/Rectangle.png'
 function Hero() {
 
     return (
