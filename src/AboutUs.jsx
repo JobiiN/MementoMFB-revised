@@ -25,8 +25,7 @@ function AboutUss() {
                         </span>
                         <h2 className="big-title sub-heading">Empowering Dreams. Driving Growth.</h2>
                         <p className='fintech-driven'>We combine modern technology, financial expertise, and customer-focused service to provide accessible
-                            banking solutions for Nigerians. Built on a foundation of trust, we are committed to promoting financial inclusion and empowering local communities. Whether
-                            supporting individual dreams or driving business success, we deliver the secure, innovative, and reliable financial services our customers need to build lasting
+                            banking solutions for Nigerians. Built on a foundation of trust, we are committed to promoting financial inclusion and empowering local communities. We deliver the secure, innovative, and reliable financial services our customers need to build lasting
                             stability and create new opportunities for growth. </p>
 
                         <img src={marWom} className='marWom' />

@@ -62,7 +62,7 @@
 .heroh1 {
 
     color: #1A1F2C;
-    font-size: 90px;
+    font-size: 80px;
     padding-left: 0;
     padding-bottom: 0;
     line-height: 1;
@@ -74,7 +74,7 @@
     padding-top: 0;
     color: #1A1F2C;
 
-    font-size: 90px;
+    font-size: 80px;
     line-height: 1;
 
 
@@ -99,14 +99,14 @@
 
 .heropic {
     position: absolute;
-    right:-4%;
-    bottom: 2%;
+    right: -4%;
+    bottom: 1.9%;
     height: 125%;
 }
 
 .hero-stats {
-    background-color: rgba(26, 31, 44, 0.029);
-    border-radius: 15px;
+    background-color: #FFF2E8;
+    border-radius: 45px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -114,9 +114,9 @@
     margin-top: 0px;
     width: 90%;
     max-width: 1400px;
-    padding: 20px 40px;
+    padding: 10px 40px;
 
-   
+
 }
 
 
@@ -148,12 +148,19 @@
 .total-cust p,
 .disbursed p {
     color: #1A1F2C !important;
+    font-size: 20px !important;
 }
 
 .total-cust span,
-.licensed span,
 .disbursed span {
     color: #1A1F2C !important;
+    font-size: 12px !important;
+
+}
+
+.licensed span {
+    color: #1A1F2C !important;
+    font-size: 14px !important;
 
 }
 
@@ -202,7 +209,7 @@
 }
 
 .cbnLogo {
-    max-height: 80px;
+    max-height: 70px;
 }
 
 .ndicLogo {
@@ -240,7 +247,7 @@
     width: 35px;
     height: 35px;
     border-radius: 50px;
-    border: solid #1A1F2C;
+    border: solid white;
     border-width: 2.5px;
 }
 
@@ -258,6 +265,22 @@
     height: 40px;
     display: flex;
     align-items: center;
+}
+
+.sPeople:not(:first-child) {
+    margin-left: -10px;
+}
+
+.sPeople:nth-child(1) {
+    z-index: 1;
+}
+
+.sPeople:nth-child(2) {
+    z-index: 2;
+}
+
+.sPeople:nth-child(3) {
+    z-index: 3;
 }
 
 
@@ -350,53 +373,61 @@
         background-color: transparent;
     }
 
-    .heropictext{
+    .heropictext {
         flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-self: stretch;
- width: 90%;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        width: 90%;
     }
 
-    .heroh1, .heroh2, .herodiv h6{
+    .heroh1,
+    .heroh2,
+    .herodiv h6 {
         text-align: center;
         align-items: center;
 
     }
-    
-    .herodiv h6{
+
+    .herodiv h6 {
         margin-left: auto;
         margin-right: auto;
     }
-    .herodiv{
+
+    .herodiv {
         text-align: center;
     }
-/*
-    .herodiv2{
-        max-width: 430px;
-    }
 
-    
 
-    .herodiv2{
+    @media (max-width: 1024px) {
+        .herodiv2 {
+            margin-top: 20px;
+            width: min(75vw, 360px);
+        }
 
+        .herobigL {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .heropic {
+            height: 110%;
+            right: 4%;
+            bottom: 0%;
+        }
+
+        .hero{
+            overflow: visible;
+            
+        }
     }
-    .herobigL{
-       max-height: 10px;
-     
-    }
-    .heropic{
-         position: relative;
-    }
-         */
 }
 
 
 
 
-@media (min-width: 768px) {
-  
-}
+@media (min-width: 768px) {}
 
 @media (min-width: 1025px) {
     .hero-stats {
@@ -417,5 +448,5 @@
         justify-self: end;
     }
 
-   
+
 }

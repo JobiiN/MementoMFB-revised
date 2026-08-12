@@ -88,7 +88,7 @@ a {
   justify-content: space-between;
   height: 74px;
   gap: 24px;
-  max-width: 1240px;
+  max-width: 1430px;
   margin: 0 auto;
 }
 
@@ -125,31 +125,20 @@ a {
 
 .navBarLinks a {
   position: relative;
+  font-size: 16px;
+
+  transition: 0.3s ease;
 }
 
 .navBarLinks a:hover {
   color: #46464b;
-  font-weight: 450;
-
-}
-
-.navBarLinks a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background: #C8500F;
-  transition: width 0.3s ease;
+  font-weight: 500;
 
 }
 
 
-.navBarLinks a:hover::after {
-  width: 100%;
 
-}
+
 
 nav ul {
   list-style: none;
@@ -368,7 +357,7 @@ nav ul {
   cursor: pointer;
   white-space: nowrap;
   border-bottom: solid 5px rgba(0, 0, 0, 0.1);
-
+  font-size: 14px;
 
   overflow: hidden;
   perspective: 500px;

@@ -85,7 +85,7 @@ function Hero() {
                                     <img className="sPeople" src={p2} />
                                     <img className="sPeople" src={p3} />
                                 </div>
-                                <p>2000+</p>
+                                <p>2,000+</p>
                             </div>
                             <span>Customers have accessed our banking services and growing daily.</span>
                         </div>
