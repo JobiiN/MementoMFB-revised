@@ -33,10 +33,11 @@
 }
 
 .little-title-logo {
-  height: 1em; /* exactly the same height as the pill text */
-  width: auto;
-  display: block;
-  object-fit: contain;
+    height: 1em;
+    /* exactly the same height as the pill text */
+    width: auto;
+    display: block;
+    object-fit: contain;
 }
 
 .big-title {
@@ -176,7 +177,7 @@ p {
     width: 1250px;
     text-align: center;
     margin-top: 30px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 
@@ -187,7 +188,7 @@ p {
     margin-top: 50px;
     margin-bottom: 50px;
     object-fit: cover;
-    object-position:center 16%;
+    object-position: center 16%;
 
 }
 
@@ -282,7 +283,7 @@ p {
         margin-right: 10px;
     }
 
-   
+
 }
 
 
@@ -302,7 +303,7 @@ p {
         padding-right: 5PX;
     }
 
-     .marWom {
+    .marWom {
         max-width: 90%;
     }
 }
@@ -325,5 +326,16 @@ p {
 
     .grow h2 {
         text-align: center;
+    }
+
+    .marWom {
+        height: 230px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .marWom {
+        max-height: 250px;
     }
 }

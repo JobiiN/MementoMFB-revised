@@ -1,13 +1,11 @@
-.mfb-footer__inner {
- 
-}
+.mfb-footer__inner {}
 
 
 /* ── Outer shell ─────────────────────────────────────────────────────────── */
 
 .footer-logo {
 
-  height: 50px;
+  height: 35px;
 }
 
 .mfb-footer__inner {
@@ -17,7 +15,7 @@
 }
 
 .mfb-footer__container {
-  max-width: 1240px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 28px;
 }
@@ -109,10 +107,10 @@
 
 .footerAbout {
   text-align: left;
-  padding:  0;
+  padding: 0;
   padding-bottom: 15px;
-   line-height: 20px;
-   white-space: pre-line;
+  line-height: 20px;
+  white-space: pre-line;
 
   color:
     #6B6F7B;
@@ -124,7 +122,7 @@
   padding: 5px 0;
   color: #6b6f7b;
   font-size: 12.5px;
- 
+
 }
 
 /* ── Responsive ──────────────────────────────────────────────────────────── */
@@ -139,6 +137,10 @@
   .mfb-footer__row>div:nth-child(3) {
     grid-column: 2;
     grid-row: 2;
+  }
+
+  .mfb-footer__copyright {
+    text-align: left;
   }
 }
 

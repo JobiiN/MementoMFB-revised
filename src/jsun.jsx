@@ -1,5 +1,5 @@
 import { Player } from '@lottiefiles/react-lottie-player'
-import animationData from './assets/animation (2).json'
+import animationData from './assets/new.json'
 
 
 function jsun() {

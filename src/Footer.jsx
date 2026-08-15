@@ -27,7 +27,7 @@ function Footee() {
               </div>
 
               {/* ── Col 2 · Email ──────────────── */}
-              <div data-aos="fade-up" data-aos-delay="100">
+              <a href="mailto:info@memento.ng" data-aos="fade-up" data-aos-delay="100">
                 <div className="mfb-footer__card">
                   <div className="mfb-footer__card-body">
                     <p className="mfb-footer__card-label"><Mail /> Email</p>
@@ -36,10 +36,10 @@ function Footee() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
 
               {/* ── Col 3 · Address ──────────────── */}
-              <div data-aos="fade-up" data-aos-delay="200">
+              <a href="https://maps.google.com/?q=194+Herbert+Macaulay+Way,+Yaba,+Lagos" data-aos="fade-up" data-aos-delay="200">
                 <div className="mfb-footer__card">
                   <div className="mfb-footer__card-body">
                     <p className="mfb-footer__card-label"><MapPin /> Head Office Address</p>
@@ -50,7 +50,7 @@ function Footee() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
 
             </div>{/* /row */}
             <div className='footerAbou'>

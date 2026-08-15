@@ -19,42 +19,42 @@ function Hero() {
                 <div className="hero-content">
 
 
-                <div className='heropictext'>
-                    <div className="herodiv">
-                        <div data-aos="fade-up" data-aos-delay="100">
-                            <strong className="heroh1">Banking for </strong>
-                            <small className="heroh2">Bigger Dreams.</small>
-                        </div>
-                        <div data-aos="fade-up" data-aos-delay="200">
-                            <h6>
-                                Simple, secure and technology-driven
-                                banking solutions designed to help individuals,
-                                traders, salary earners and SMEs grow confidently.
-                            </h6>
+                    <div className='heropictext'>
+                        <div className="herodiv">
+                            <div data-aos="fade-up" data-aos-delay="100">
+                                <strong className="heroh1">Banking for </strong>
+                                <small className="heroh2">Bigger Dreams.</small>
+                            </div>
+                            <div data-aos="fade-up" data-aos-delay="200">
+                                <h6>
+                                    Simple, secure and technology-driven
+                                    banking solutions designed to help individuals,
+                                    traders, salary earners and SMEs grow confidently.
+                                </h6>
+                            </div>
+
+                            <div className='CTAs' data-aos="fade-up" data-aos-delay="100">
+                                <a href="#contact" className="contact">
+                                    <span className="roll-wrap">
+                                        <span className="roll-text top">Contact Us</span>
+                                        <span className="roll-text bottom">Contact Us</span>
+                                    </span>
+                                </a>
+                                <a href="#Services" className="contact SoSc">
+                                    <span className="roll-wrap">
+                                        <span className="roll-text top">See Our Services</span>
+                                        <span className="roll-text bottom">See Our Services</span>
+                                    </span>
+                                </a>
+                            </div>
+
                         </div>
 
-                        <div className='CTAs' data-aos="fade-up" data-aos-delay="100">
-                            <a href="#contact" className="contact">
-                                <span className="roll-wrap">
-                                    <span className="roll-text top">Contact Us</span>
-                                    <span className="roll-text bottom">Contact Us</span>
-                                </span>
-                            </a>
-                            <a href="#Services" className="contact SoSc">
-                                <span className="roll-wrap">
-                                    <span className="roll-text top">See Our Services</span>
-                                    <span className="roll-text bottom">See Our Services</span>
-                                </span>
-                            </a>
+                        <div className='herodiv2'>
+                            <img src={bigLog} className='herobigL' />
+                            <img src={woman} className='heropic' />
                         </div>
-
                     </div>
-
-                    <div className='herodiv2'>
-                        <img src={bigLog} className='herobigL'/>
-                        <img src={woman} className='heropic'/>
-                    </div>
-</div>
 
                     <section className='hero-stats' data-aos="fade-up" data-aos-delay="300">
                         <div className='total-cust'>

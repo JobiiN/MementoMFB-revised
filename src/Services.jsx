@@ -3,7 +3,7 @@ import shopMan from './assets/shop.png'
 import cbn from './assets/cbnlogo.png'
 import ndic from './assets/ndicLogo_dark.png'
 import healthMan from './assets/health.jpg'
-
+import bulb from './assets/bulb.png'
 import NairaIcon from "./NairaIcon";
 
 import { PiggyBank, CreditCard, Landmark, TrendingUp } from 'lucide-react';
@@ -21,8 +21,14 @@ function Services() {
             <div id='Services' />
             <div className='ServicesSection'>
                 <div className='services-header' data-aos="fade-up">
-                    <span className='little-title'>💡Our Services</span>
+                    <span className='little-title'>
+                        <img className="little-title-logo" src={bulb} />
+                        Our Services
+                    </span>
                     <h2 className='big-title sub-heading'>Banking that fits every kind of customer.</h2>
+                    <p className='servicesPar'>
+                        From the Lagos trader to the Abuja salary earner, we built Memento around the real financial needs of everyday Nigerians — fast, simple and always within reach.
+                    </p>
                 </div>
 
                 <div className='services-cards'>

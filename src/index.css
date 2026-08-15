@@ -97,8 +97,6 @@ a {
   align-items: center;
   text-align: center;
   display: flex;
-  gap: 4px;
-  color: white;
   cursor: pointer;
 }
 
@@ -155,10 +153,16 @@ nav ul {
   }
 
   .NaRow {
-    padding: 0 20px;
+    padding-right: 10px;
   }
 }
 
+@media (759px <= width <= 1439px) {
+  .NaRow {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 
 
 
@@ -259,6 +263,7 @@ nav ul {
   width: 100%;
   max-width: 1200px;
   max-height: 489px;
+  padding-top: 30px;
   margin: 0 auto;
   overflow: hidden;
   line-height: 0;
@@ -412,7 +417,7 @@ nav ul {
 
 
 .sub-heading {
-  font-size: 44px;  font-weight: 600;
+  font-size: 44px;  font-weight: 700;
   font-style: semi-bold;
 }
 

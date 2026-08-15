@@ -24,6 +24,15 @@
     margin-bottom: 60px;
 }
 
+.servicesPar{
+        margin-left: auto;
+        margin-right: auto;
+    margin-top: 30px;
+    font-size: 16px;
+    color: white;
+    max-width: 681px;
+}
+
 .services-cards {
     display: flex;
     gap: 24px;
