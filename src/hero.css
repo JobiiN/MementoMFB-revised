@@ -339,7 +339,7 @@
         align-items: center;
         align-self: stretch;
         width: 90%;
-        max-height: 87vh;
+        height: 37vh;
     }
 
      .heroh1,
@@ -361,11 +361,18 @@
 
     .heropic{
         width: 100%;
+        height: 70%;
     }
     .herobigL{
         width: 100%;
-        height: 100%;
+        height: 60%;
     }
+
+     .heropic {
+        
+            right: -2%;
+            bottom: 40%;
+        }
 
   
 
