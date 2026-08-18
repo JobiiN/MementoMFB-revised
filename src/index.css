@@ -157,7 +157,7 @@ nav ul {
   }
 }
 
-@media (759px <= width <= 1439px) {
+@media (759px <=width <=1439px) {
   .NaRow {
     padding-left: 10px;
     padding-right: 10px;
@@ -261,10 +261,10 @@ nav ul {
 
 .jsun-animation-wrap {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1212px;
   max-height: 489px;
-  padding-top: 30px;
   margin: 0 auto;
+  padding-top: 7.5px;
   overflow: hidden;
   line-height: 0;
   background: linear-gradient(180deg, #F26A1F 0%, #7A2E0E 100%);
@@ -348,7 +348,10 @@ nav ul {
 
 .contact {
   background-color: rgba(242, 101, 34, 1);
-  width: 220px;
+  width: auto;
+  min-width: 180px;
+  max-width: 220px;
+  flex: 1 1 auto;
   color: white;
   text-decoration: none;
   display: inline-flex;
@@ -417,13 +420,14 @@ nav ul {
 
 
 .sub-heading {
-  font-size: 44px;  font-weight: 700;
+  font-size: 44px;
+  font-weight: 700;
   font-style: semi-bold;
 }
 
 
 @media (max-width: 1024px) {
-.sub-heading {
+  .sub-heading {
     font-size: 32px;
-}
+  }
 }

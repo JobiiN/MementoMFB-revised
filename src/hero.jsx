@@ -16,7 +16,7 @@ function Hero() {
 
                 <div className="hero-overlay" />
 
-                <div className="hero-content">
+                <div className="hero-content"  data-aos="fade-up" data-aos-delay="100">
 
 
                     <div className='heropictext'>
@@ -56,7 +56,7 @@ function Hero() {
                         </div>
                     </div>
 
-                    <section className='hero-stats' data-aos="fade-up" data-aos-delay="300">
+                    <section className='hero-stats'>
                         <div className='total-cust'>
                             <p>100+</p>
                             <span>Loans disbursed to individuals, traders and SMEs across Nigeria.</span>

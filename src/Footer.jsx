@@ -39,7 +39,7 @@ function Footee() {
               </a>
 
               {/* ── Col 3 · Address ──────────────── */}
-              <a href="https://maps.google.com/?q=194+Herbert+Macaulay+Way,+Yaba,+Lagos" data-aos="fade-up" data-aos-delay="200">
+              <a href="https://maps.google.com/?q=194+Herbert+Macaulay+Way,+Yaba,+Lagos" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="200">
                 <div className="mfb-footer__card">
                   <div className="mfb-footer__card-body">
                     <p className="mfb-footer__card-label"><MapPin /> Head Office Address</p>

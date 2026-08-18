@@ -5,7 +5,7 @@ import Core4 from './assets/customerF.png'
 import Core5 from './assets/innovation.png'
 import whcG from './assets/whcG.png'
 import whcGMobile from './assets/whcGMobile.png'
-import marWom from './assets/marWom.jpg'
+import marWom from './assets/marWom.png'
 import pillLogo from './assets/logoR2.png'
 import { ShieldCheck, BadgeCheck, TrendingUp, HeartHandshake, Lightbulb } from 'lucide-react'
 
@@ -25,7 +25,7 @@ function AboutUss() {
                         </span>
                         <h2 className="big-title sub-heading">Empowering Dreams. Driving Growth.</h2>
                         <p className='fintech-driven'>We combine modern technology, financial expertise, and customer-focused service to provide accessible
-                            banking solutions for Nigerians. Built on a foundation of trust, we are committed to promoting financial inclusion and empowering local communities. We deliver the secure, innovative, and reliable financial services our customers need to build lasting
+                            banking solutions for Nigerians. We are committed to promoting financial inclusion and empowering local communities. We deliver reliable financial services our customers need to build lasting
                             stability and create new opportunities for growth. </p>
 
                         <img src={marWom} className='marWom' />
