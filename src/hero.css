@@ -466,7 +466,6 @@
         flex-direction: column;
         justify-content: center;
         /* actually centers vertically (main axis) */
-        align-items: center;
     }
 
     .total-cust,

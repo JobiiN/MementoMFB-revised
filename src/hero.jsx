@@ -27,7 +27,7 @@ function Hero() {
                                 <h6>
                                     Simple, secure and technology-driven
                                     banking solutions designed to help individuals,
-                                    traders, salary earners and SMEs grow confidently.
+                                    and businesses grow confidently.
                                 </h6>
                             </div>
 

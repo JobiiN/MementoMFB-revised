@@ -55,11 +55,11 @@ function Footee() {
             </div>{/* /row */}
             <div className='footerAbou'>
               <p className='footerAbout'>
-                {`We are a fintech-driven microfinance bank built to help individuals, traders, salary earners and SMEs achieve bigger dreams across Nigeria.
+                {`We are a technology-driven microfinance bank built to help individuals and businesses achieve bigger dreams across Nigeria.
 
-                Memento Microfinance Bank is a subsidiary of Paga Group LTD UK and is licensed as a Tier 1 Unit Microfinance Bank by the Central Bank of Nigeria (CBN), and deposits are insured by the Nigeria Deposit Insurance Corporation (NDIC).
+                Memento MFB is a subsidiary of `} <a href="https://www.mypaga.com/pagagroup/" style={{ color: '#F26A1F' }}>Paga Group LTD</a> {`(UK) and is licensed by the Central Bank of Nigeria (CBN). Deposits are insured by the Nigeria Deposit Insurance Corporation (NDIC). 
 
-                Paga Group LTD UK owns Paga and associated trademarks which are licensed to its subsidiaries. Pagatech Limited is a subsidiary of`} <a href="https://www.mypaga.com/pagagroup/" style={{ color: '#F26A1F' }}>Paga Group LTD UK.</a></p>
+                Paga Group owns Memento and the associated trademarks, which are licensed to its subsidiaries.`}</p>
             </div>
 
             <p className="mfb-footer__copyright">© 2026 Memento Microfinance Bank Ltd. All rights reserved.</p>
