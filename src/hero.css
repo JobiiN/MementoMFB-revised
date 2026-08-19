@@ -1,19 +1,10 @@
 .hero {
     position: relative;
-    height: 100vh;
 
     background-color: white;
     background: linear-gradient(to bottom, white 40%, rgba(255, 249, 240) 100%);
 }
 
-.hero-video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-}
 
 .hero-overlay {
     position: absolute;
@@ -24,7 +15,6 @@
 .hero-content {
     position: relative;
     z-index: 2;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -124,7 +114,6 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 0 auto;
-    margin-top: 0px;
     width: 90%;
     max-width: 1400px;
     padding: 10px 40px;
@@ -138,7 +127,7 @@
 .CTAs {
     display: flex;
     flex-wrap: wrap;
-    align-items: left;
+    align-items: flex-start;
     gap: 16px;
     margin-top: 40px;
 }
@@ -302,52 +291,50 @@
 }
 
 
+
+.hero-layered-art {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+}
+
+/* The combined Canva image is hidden during the normal desktop layout. */
+.hero-compact-art {
+    display: none;
+}
+
 /*smaller phone*/
-@media (max-width: 770px) {
-    .hero {
-        height: auto;
-        min-height: 100svh;
-    }
+@media (max-width: 770.98px) {
+
 
     .heropictext {
-        flex: 0 0 100svh;
-        min-height: 100svh;
         max-height: none;
     }
 
     .hero-content {
-        height: auto;
-        min-height: 100svh;
         padding: 100px 20px 0px;
     }
 
-    .heroh1 {}
 
-    .heroh2 {
-        font-size: clamp(48px, 6vw, 80px);
-        padding-left: 0;
-    }
+
 
     .herodiv h6 {
         font-size: 14px;
         max-width: 100%;
     }
 
-    .heropictext{
+    .heropictext {
         flex-direction: column;
-         justify-content: center;
+        justify-content: center;
         align-items: center;
         align-self: stretch;
         width: 90%;
-        height: 37vh;
     }
 
-     .heroh1,
+    .heroh1,
     .heroh2,
     .herodiv h6 {
         text-align: center;
-        align-items: center;
-
     }
 
     .herodiv h6 {
@@ -359,24 +346,10 @@
         text-align: center;
     }
 
-    .heropic{
-        width: 100%;
-        height: 80%;
-    }
-    .herobigL{
-        width: 100%;
-        height: 70%;
-    }
 
-     .heropic {
-        
-            right: -2%;
-            bottom: 30%;
-        }
 
-  
 
-    
+
 
 
     .hero-stats {
@@ -387,18 +360,16 @@
         margin-top: 20px;
         max-width: 100%;
         padding: 15px 20px;
-        height: 50svh;
     }
 
     .CTAs {
-       display: none;
+        display: none;
     }
 
 
     .total-cust,
     .licensed,
     .disbursed {
-        width: 300px;
         background-color: #FFF2E8;
         width: 330px;
         height: 120px;
@@ -406,23 +377,78 @@
 
         flex-direction: column;
         justify-content: center;
-        /* actually centers vertically (main axis) */
         align-items: center;
     }
+
+
+    .hero-stats {
+        height: auto;
+        flex: 0 0 auto;
+    }
+
+    .heropictext {
+        flex: 0 0 calc(100svh - 100px);
+        min-height: calc(100svh - 100px);
+        height: calc(100svh - 100px);
+        margin: 0 auto;
+    }
+
+    .herodiv {
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+
+    .herodiv2 {
+        flex: 0 0 auto;
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        width: min(78vw, 340px);
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .hero-layered-art {
+        display: none;
+    }
+
+    .hero-compact-art {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+/* Short landscape phones need more scrollable space for text + image. */
+@media (max-width: 770.98px) and (orientation: landscape) {
+    .hero-content {
+        padding-top: 90px;
+    }
+
+    .heropictext {
+        flex: 0 0 auto;
+        height: auto;
+        min-height: 620px;
+    }
+
+    .herodiv {
+        flex: 1 1 auto;
+    }
+
+    .herodiv2 {
+    margin-top: 78px;
+}
 }
 
 /*TABLET VIEW*/
 
-@media (770px <=width <=1024px) {
+@media (min-width: 771px) and (max-width: 1024px) {
     .CTAs {
         display: none;
     }
 
     .hero {
-        width: 100%;
-    }
-
-    .hero-video {
         width: 100%;
     }
 
@@ -434,7 +460,6 @@
     .licensed,
     .disbursed {
         background-color: #FFF2E8;
-        width: 30%;
         height: 100%;
         display: flex;
 
@@ -452,14 +477,6 @@
         flex: 1 1 0;
     }
 
-    .total-cust,
-    .disbursed {
-
-        flex-direction: column;
-        justify-content: center;
-        /* actually centers vertically (main axis) */
-        align-items: center;
-    }
 
     .hero-stats {
         background-color: transparent;
@@ -496,12 +513,8 @@
     }
 
 
-    .hero-content {
+ 
 
-        padding: 200px 20px 25px;
-    }
-
-    @media (770px <=width <=1024px) {
         .licensedIMAGES {
             display: flex;
             align-items: center;
@@ -521,12 +534,10 @@
             height: auto;
             margin-left: 0;
         }
-    }
 
 
-    @media (max-width: 1024px) {
+
         .herodiv2 {
-            margin-top: 10px;
             margin: 10%;
 
             width: min(75vw, 360px);
@@ -544,17 +555,12 @@
             bottom: 19.9%;
         }
 
-        .hero {
-            overflow: visible;
-
-        }
     }
-}
 
 
 
 
-@media (min-width: 768px) {}
+
 
 @media (min-width: 1025px) {
     .hero-stats {
@@ -577,3 +583,75 @@
 
 
 }
+
+
+
+
+/* Allow the hero to grow when its content needs more vertical space. */
+.hero,
+.hero-content {
+    height: auto;
+    min-height: 100svh;
+}
+
+.hero-content {
+    box-sizing: border-box;
+}
+
+
+/*
+  This is the “high zoom / tighter desktop width” layout.
+  Adjust 1150px after testing; it is based on viewport width, not zoom percentage.
+*/
+@media (min-width: 771px) and (max-width: 1024px) {
+    .hero-content {
+        padding: 120px 20px 30px;
+    }
+
+    .heropictext {
+        flex: 0 0 auto;
+        max-height: none;
+        min-height: 0;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .herodiv {
+        flex: 0 0 auto;
+        text-align: center;
+    }
+
+    .heroh1,
+    .heroh2,
+    .herodiv h6 {
+        text-align: center;
+    }
+
+    .herodiv h6 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .herodiv2 {
+        width: min(75vw, 400px);
+        height: auto;
+        margin: 0;
+    }
+
+    /* Hide the two separately layered images. */
+    .hero-layered-art {
+        display: none;
+    }
+
+    /* Show the single Canva-composed image in normal document flow. */
+    .hero-compact-art {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-stats {
+        margin-top: 24px;
+    }
+}
+

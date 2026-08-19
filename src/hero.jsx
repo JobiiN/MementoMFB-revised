@@ -1,12 +1,10 @@
-import video from './assets/video2.mp4'
-import videoWebm from './assets/video2.webm'
-import PosterImg from './assets/poster.png'
 import cbn from './assets/cbnlogo.png'
 import ndic from './assets/ndicLogo_dark.png'
 import p1 from './assets/person1.avif'
 import p2 from './assets/person2.avif'
 import p3 from './assets/person3.avif'
 import woman from './assets/agent.png'
+import heroCompact from './assets/agen.png'
 import bigLog from './assets/Rectangle.png'
 function Hero() {
 
@@ -16,7 +14,7 @@ function Hero() {
 
                 <div className="hero-overlay" />
 
-                <div className="hero-content"  data-aos="fade-up" data-aos-delay="100">
+                <div className="hero-content" data-aos="fade-up" data-aos-delay="100">
 
 
                     <div className='heropictext'>
@@ -51,8 +49,16 @@ function Hero() {
                         </div>
 
                         <div className='herodiv2'>
-                            <img src={bigLog} className='herobigL' />
-                            <img src={woman} className='heropic' />
+                            <div className="hero-layered-art">
+                                <img src={bigLog} className='herobigL' />
+                                <img src={woman} className='heropic' />
+                            </div>
+
+                            <img
+                                src={heroCompact}
+                                className="hero-compact-art"
+                                alt="Memento banking agent"
+                            />
                         </div>
                     </div>
 
