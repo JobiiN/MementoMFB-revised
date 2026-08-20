@@ -30,6 +30,8 @@
     display: inline-flex;
     align-items: center;
     gap: 0.45em;
+
+    margin-bottom: 20px;
 }
 
 .little-title-logo {
