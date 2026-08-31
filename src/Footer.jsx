@@ -1,5 +1,4 @@
 import logo from './assets/logoR.png'
-import pattern from './assets/pattern3.png'
 import { Mail } from 'lucide-react';
 import { MapPin } from 'lucide-react';
 

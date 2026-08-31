@@ -1,8 +1,5 @@
 import cbn from './assets/cbnlogo.png'
 import ndic from './assets/ndicLogo_dark.png'
-import p1 from './assets/person1.avif'
-import p2 from './assets/person2.avif'
-import p3 from './assets/person3.avif'
 import woman from './assets/agent.png'
 import heroCompact from './assets/agen.png'
 import bigLog from './assets/Rectangle.png'
@@ -59,43 +56,22 @@ function Hero() {
                                 className="hero-compact-art"
                                 alt="Memento banking agent"
                             />
+
+                            <div className='licensed'>
+                                <span>Licensed & Protected</span>
+                                <div className='licensedIMAGES'>
+                                    <img className="cbnLogo" src={cbn} alt="Central Bank of Nigeria" />
+                                    <img className="ndicLogo" src={ndic} alt="Nigeria Deposit Insurance Corporation" />
+                                </div>
+                            </div>
                         </div>
+
+
                     </div>
 
-                    <section className='hero-stats'>
-                        <div className='total-cust'>
-                            <p>100+</p>
-                            <span>Loans disbursed to individuals, traders and SMEs across Nigeria.</span>
-                        </div>
 
-                        <div className="line-divider">
 
-                        </div>
 
-                        <div className='licensed'>
-                            <span>Licensed & Protected</span>
-                            <pic className='licensedIMAGES'>
-                                <img className="cbnLogo" src={cbn} />
-                                <img className="ndicLogo" src={ndic} />
-                            </pic>
-                        </div>
-
-                        <div className="line-divider">
-
-                        </div>
-
-                        <div className='disbursed'>
-                            <div className='disbursed-title'>
-                                <div className='disbursed-pics'>
-                                    <img className="sPeople" src={p1} />
-                                    <img className="sPeople" src={p2} />
-                                    <img className="sPeople" src={p3} />
-                                </div>
-                                <p>2,000+</p>
-                            </div>
-                            <span>Customers have accessed our banking services and growing daily.</span>
-                        </div>
-                    </section>
                 </div>
             </section>
         </>

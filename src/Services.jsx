@@ -1,19 +1,4 @@
-import officeMan from './assets/office.png'
-import shopMan from './assets/shop.png'
-import cbn from './assets/cbnlogo.png'
-import ndic from './assets/ndicLogo_dark.png'
-import healthMan from './assets/health.jpg'
 import bulb from './assets/bulb.png'
-import NairaIcon from "./NairaIcon";
-
-import { PiggyBank, CreditCard, Landmark, TrendingUp } from 'lucide-react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-    faPiggyBank,
-    faCreditCard,
-    faBuildingColumns,
-    faChartLine
-} from '@fortawesome/free-solid-svg-icons';
 
 function Services() {
     return (

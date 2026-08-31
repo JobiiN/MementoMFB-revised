@@ -5,7 +5,6 @@ import './hero.css'
 import './AboutUs.css'
 import './Services.css'
 import './Footer.css'
-import './loans.css'
 import App from './App.jsx'
 
 
