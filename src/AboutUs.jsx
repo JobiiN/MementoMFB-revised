@@ -20,7 +20,6 @@ function AboutUss() {
                 <div className='AboutSection2'>
                     <div className='WWa' data-aos="fade-up">
                         <span className="little-title">
-                            <img className="little-title-logo" src={pillLogo} alt="" />
                             About Us
                         </span>
                         <h2 className="big-title sub-heading">Empowering Dreams. Driving Growth.</h2>

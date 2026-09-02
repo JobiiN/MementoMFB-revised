@@ -30,12 +30,22 @@ function NavHead({ scrolled }) {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 768 && menuOpen) {
+        setMenuOpen(false)
+      }
+    }
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [menuOpen])
+
   const linkClass = (id) => activeId === id ? 'nav-active' : ''
 
   return (
     <>
       <div id='home' />
-      <div className={`NavHead${scrolled ? ' scrolled' : ''}`}>
+      <div className={`NavHead${(scrolled || menuOpen) ? ' scrolled' : ''}`}>
         <div className='NaRow'>
           <a className='logoArea'>
             <img className="logo" src={logo} />
@@ -65,6 +75,11 @@ function NavHead({ scrolled }) {
           <a href='#contact' onClick={() => setMenuOpen(false)}>Contact Us</a>
         </div>
       </div>
+
+      {menuOpen && (
+        <div className='mobileMenu-overlay' onClick={() => setMenuOpen(false)} />
+      )}
+
     </>
   )
 }

@@ -1,6 +1,8 @@
 import logo from './assets/logoR.png'
 import { Mail } from 'lucide-react';
 import { MapPin } from 'lucide-react';
+import cbn from './assets/cbnlogo.png'
+import ndic from './assets/ndicLogo_dark.png'
 
 function Footee() {
   return (
@@ -59,6 +61,15 @@ function Footee() {
                 Memento MFB is a subsidiary of `} <a href="https://www.mypaga.com/pagagroup/" style={{ color: '#F26A1F' }}>Paga Group LTD</a> {`(UK) and is licensed by the Central Bank of Nigeria (CBN). Deposits are insured by the Nigeria Deposit Insurance Corporation (NDIC). 
 
                 Paga Group owns Memento and the associated trademarks, which are licensed to its subsidiaries.`}</p>
+
+              <div className='bottomLicense'>
+                <span>Licensed & Protected</span>
+                <pic>
+                  <img src={cbn} className='cbnLogo'/>
+                  <img src={ndic} className='ndicLogo'/>
+
+                </pic>
+              </div>
             </div>
 
             <p className="mfb-footer__copyright">© 2026 Memento Microfinance Bank Ltd. All rights reserved.</p>

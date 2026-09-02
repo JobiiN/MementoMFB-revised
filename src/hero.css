@@ -256,7 +256,7 @@
 
     .licensed {
         width: 250px;
-        height: 120px;
+        height: auto;
         display: flex;
 
         flex-direction: column;
@@ -485,11 +485,12 @@
 .herodiv2 .licensed {
     position: absolute;
     z-index: 3;
-    right: -12%;
+    right: 0;
     bottom: 4%;
 
     width: clamp(150px, 52%, 215px);
     min-width: 0;
+    max-width: 100%;
     padding: 10px 12px;
 
     border-radius: 12px;
@@ -520,4 +521,16 @@
 .herodiv2 .ndicLogo {
     width: min(108px, 68%);
     margin-left: 0;
+}
+
+@media (min-width: 1025px) {
+    .herodiv2 {
+        padding-right: clamp(75px, 16vw, 15px);
+    }
+}
+
+@media (max-width: 770.98px) {
+    .herodiv2 .licensed {
+        right: -20px;
+    }
 }

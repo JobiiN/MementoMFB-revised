@@ -19,28 +19,20 @@
 .little-title {
     color: white;
     font-weight: light;
-    background-color: black;
+    background-color: #231f20;
     border-radius: 20px;
-    padding: 7px;
+    padding: 8px 12px;
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
     font-size: small;
-
+line-height: normal;
     display: inline-flex;
     align-items: center;
     gap: 0.45em;
 
-    margin-bottom: 20px;
 }
 
-.little-title-logo {
-    height: 1em;
-    /* exactly the same height as the pill text */
-    width: auto;
-    display: block;
-    object-fit: contain;
-}
 
 .big-title {
     color: #1a1f2c;

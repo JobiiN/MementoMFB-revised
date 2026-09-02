@@ -7,7 +7,6 @@ function Services() {
             <div className='ServicesSection'>
                 <div className='services-header' data-aos="fade-up">
                     <span className='little-title'>
-                        <img className="little-title-logo" src={bulb} />
                         Our Services
                     </span>
                     <h2 className='big-title sub-heading'>Banking that fits every kind of customer.</h2>

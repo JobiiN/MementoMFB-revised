@@ -202,7 +202,7 @@ nav ul {
 .mobileMenu {
   display: flex;
   flex-direction: column;
-  background-color: #C8500F;
+  background-color: white;
 
   overflow: hidden;
   max-height: 0;
@@ -220,9 +220,9 @@ nav ul {
 
 .mobileMenu a {
   padding: 12px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #F2F2F2;
 
-  color: white;
+  color: #46464b;
 
 }
 
@@ -429,5 +429,34 @@ nav ul {
 @media (max-width: 1024px) {
   .sub-heading {
     font-size: 32px;
+  }
+}
+
+
+.mobileMenu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 40;
+  animation: fadeInOverlay 0.25s ease;
+}
+
+@keyframes fadeInOverlay {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobileMenu-overlay {
+    display: none;
+  }
+
+  .mobileMenu {
+    display: none;
   }
 }
