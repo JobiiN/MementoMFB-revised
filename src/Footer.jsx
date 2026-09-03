@@ -58,7 +58,7 @@ function Footee() {
               <p className='footerAbout'>
                 {`We are a technology-driven microfinance bank built to help individuals and businesses achieve bigger dreams across Nigeria.
 
-                Memento MFB is a subsidiary of `} <a href="https://www.mypaga.com/pagagroup/" style={{ color: '#F26A1F' }}>Paga Group LTD</a> {`(UK) and is licensed by the Central Bank of Nigeria (CBN). Deposits are insured by the Nigeria Deposit Insurance Corporation (NDIC). 
+                Memento MFB is a subsidiary of `} <a href="https://www.mypaga.com/pagagroup/" target="_blank" rel="noreferrer" style={{ color: '#F26A1F' }}>Paga Group LTD</a> {`(UK) and is licensed by the Central Bank of Nigeria (CBN). Deposits are insured by the Nigeria Deposit Insurance Corporation (NDIC). 
 
                 Paga Group owns Memento and the associated trademarks, which are licensed to its subsidiaries.`}</p>
 
