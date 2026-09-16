@@ -18,7 +18,7 @@ function Footee() {
                 <a href="#home" className="mfb-footer__brand-link" aria-label="Memento Microfinance Bank">
 
                   <span className="mfb-footer__brand-name">
-                    <img className="footer-logo" src={logo}></img>
+                    <img className="footer-logo" src={logo} alt="logo"></img>
                   </span>
                 </a>
 
@@ -33,7 +33,7 @@ function Footee() {
                   <div className="mfb-footer__card-body">
                     <p className="mfb-footer__card-label"><Mail /> Email</p>
                     <div className="mfb-footer__card-value">
-                      <a href="mailto:info@memento.ng">info@memento.ng</a>
+                      info@memento.ng
                     </div>
                   </div>
                 </div>
@@ -45,9 +45,7 @@ function Footee() {
                   <div className="mfb-footer__card-body">
                     <p className="mfb-footer__card-label"><MapPin /> Head Office Address</p>
                     <div className="mfb-footer__card-value">
-                      <a href="https://maps.google.com/?q=194+Herbert+Macaulay+Way,+Yaba,+Lagos" target="_blank" rel="noreferrer">
                         194 Herbert Macaulay Way, Yaba, Lagos
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -64,11 +62,11 @@ function Footee() {
 
               <div className='bottomLicense'>
                 <span>Licensed & Protected</span>
-                <pic>
-                  <img src={cbn} className='cbnLogo'/>
-                  <img src={ndic} className='ndicLogo'/>
+                <div className='pic'>
+                  <img src={cbn} alt="Central Bank of Nigeria" className='cbnLogo'/>
+                  <img src={ndic} alt="Nigeria Deposit Insurance Corporation" className='ndicLogo'/>
 
-                </pic>
+                </div>
               </div>
             </div>
 

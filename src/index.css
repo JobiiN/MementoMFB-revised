@@ -88,7 +88,10 @@ a {
   justify-content: space-between;
   height: 74px;
   gap: 24px;
-  max-width: 1430px;
+
+  width: calc(100% - 48px);
+  max-width: 1440px;
+
   margin: 0 auto;
 }
 
@@ -157,12 +160,7 @@ nav ul {
   }
 }
 
-@media (759px <=width <=1439px) {
-  .NaRow {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
+
 
 
 
@@ -422,7 +420,6 @@ nav ul {
 .sub-heading {
   font-size: 44px;
   font-weight: 700;
-  font-style: semi-bold;
 }
 
 

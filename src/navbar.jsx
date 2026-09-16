@@ -6,8 +6,6 @@ function NavHead({ scrolled }) {
   const [activeId, setActiveId] = useState('home')
 
   useEffect(() => {
-    const sections = ['home', 'AboutUs', 'Services', 'contact']
-
     const handleScroll = () => {
       const sections = ['home', 'AboutUs', 'Services', 'contact']
 
@@ -47,8 +45,8 @@ function NavHead({ scrolled }) {
       <div id='home' />
       <div className={`NavHead${(scrolled || menuOpen) ? ' scrolled' : ''}`}>
         <div className='NaRow'>
-          <a className='logoArea'>
-            <img className="logo" src={logo} />
+          <a href="#home" className='logoArea'>
+            <img className="logo" src={logo} alt="logo" />
           </a>
 
           <div className='navBarLinks'>
@@ -61,6 +59,9 @@ function NavHead({ scrolled }) {
 
 
           <button
+            type="button"
+            aria-label="Toggle navigation menu"
+            aria-expanded={menuOpen}
             className={`hamburger ${menuOpen ? 'hamburger--open' : ''}`}
             onClick={() => setMenuOpen(!menuOpen)}
           >

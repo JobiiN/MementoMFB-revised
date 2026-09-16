@@ -81,16 +81,11 @@
   color: #1a1f2c;
   letter-spacing: -0.005em;
   line-height: 1.4;
-}
-
-.mfb-footer__card-value a {
-  color: #1a1f2c;
-  display: block;
-  text-decoration: none;
   transition: color 0.15s;
 }
 
-.mfb-footer__card-value a:hover {
+
+a:hover .mfb-footer__card-value {
   color: #c8500f;
 }
 
@@ -134,7 +129,7 @@
     row-gap: 10px;
   }
 
-  .mfb-footer__row>div:nth-child(3) {
+  .mfb-footer__row> :nth-child(3) {
     grid-column: 2;
     grid-row: 2;
   }
@@ -162,7 +157,7 @@
     gap: 24px;
   }
 
-  .mfb-footer__row>div:nth-child(3) {
+  .mfb-footer__row> :nth-child(3) {
     grid-column: auto;
     grid-row: auto;
   }
@@ -178,17 +173,17 @@
   margin-left: auto;
 }
 
-pic {
+.pic {
   display: flex;
   flex-direction: row;
 }
 
-pic .cbnLogo {
+.pic .cbnLogo {
   width: 40px;
   height: 50px;
 }
 
-pic .ndicLogo {
+.pic .ndicLogo {
   height: 40px;
 }
 

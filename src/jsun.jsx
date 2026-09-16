@@ -7,7 +7,7 @@ function jsun() {
         < section className="jsun-section">
 
             <div className="jsun-title-overlay">
-                <h1 className='jsun-big-title sub-heading'>Ready to Bank for your Bigger Dreams?</h1>
+                <h2 className='jsun-big-title sub-heading'>Ready to Bank for your Bigger Dreams?</h2>
                 <a href="#contact" className="contact">
                     <span className="roll-wrap">
                         <span className="roll-text top">Contact Us</span>

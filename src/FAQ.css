@@ -33,6 +33,14 @@
     cursor: pointer;
 }
 
+.mqcon {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font: inherit;
+  text-align: left;
+}
+
 .up {
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -52,11 +60,7 @@
 }
 
 
-.answer--open,
-.answer2--open,
-.answer3--open,
-.answer4--open,
-.answer5--open {
+.answer--open{
     max-height: 500px;
 
 }

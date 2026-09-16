@@ -75,7 +75,7 @@
 
 }
 
-.herodiv h6 {
+.herodiv p {
     color: #4f5055;
     font-size: 18px;
     line-height: 1.6;
@@ -214,7 +214,7 @@
 
 
 
-    .herodiv h6 {
+    .herodiv p {
         font-size: 14px;
         max-width: 100%;
     }
@@ -229,11 +229,11 @@
 
     .heroh1,
     .heroh2,
-    .herodiv h6 {
+    .herodiv p {
         text-align: center;
     }
 
-    .herodiv h6 {
+    .herodiv p {
         margin-left: auto;
         margin-right: auto;
     }
@@ -347,13 +347,13 @@
 
     .heroh1,
     .heroh2,
-    .herodiv h6 {
+    .herodiv p {
         text-align: center;
         align-items: center;
 
     }
 
-    .herodiv h6 {
+    .herodiv p {
         margin-left: auto;
         margin-right: auto;
     }
@@ -451,11 +451,11 @@
 
     .heroh1,
     .heroh2,
-    .herodiv h6 {
+    .herodiv p {
         text-align: center;
     }
 
-    .herodiv h6 {
+    .herodiv p {
         margin-left: auto;
         margin-right: auto;
     }

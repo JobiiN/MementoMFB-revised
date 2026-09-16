@@ -2,7 +2,7 @@ import cbn from './assets/cbnlogo.png'
 import ndic from './assets/ndicLogo_dark.png'
 import woman from './assets/agent.png'
 import heroCompact from './assets/agen.png'
-import bigLog from './assets/Rectangle.png'
+import bigLog from './assets/rectangle.png'
 function Hero() {
 
     return (
@@ -17,15 +17,15 @@ function Hero() {
                     <div className='heropictext'>
                         <div className="herodiv">
                             <div data-aos="fade-up" data-aos-delay="100">
-                                <strong className="heroh1">Banking for </strong>
-                                <small className="heroh2">Bigger Dreams.</small>
+                                <h1 className="heroh1">Banking for </h1>
+                                <h2 className="heroh2">Bigger Dreams.</h2>
                             </div>
                             <div data-aos="fade-up" data-aos-delay="200">
-                                <h6>
+                                <p>
                                     Simple, secure and technology-driven
                                     banking solutions designed to help individuals,
                                     and businesses grow confidently.
-                                </h6>
+                                </p>
                             </div>
 
                             <div className='CTAs' data-aos="fade-up" data-aos-delay="100">
@@ -47,8 +47,8 @@ function Hero() {
 
                         <div className='herodiv2'>
                             <div className="hero-layered-art">
-                                <img src={bigLog} className='herobigL' />
-                                <img src={woman} className='heropic' />
+                                <img src={bigLog} alt="MementoM" className='herobigL' />
+                                <img src={woman} alt="MementoLady" className='heropic' />
                             </div>
 
                             <img

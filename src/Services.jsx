@@ -1,4 +1,3 @@
-import bulb from './assets/bulb.png'
 
 function Services() {
     return (
@@ -70,7 +69,7 @@ function Services() {
                         <div className='service-icon agent-icon'>
                             <svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="128" height="128" rx="28" fill="#FFA85C" />
-                                <g stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+                                <g stroke="#FFFFFF" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" fill="none">
                                     <polyline points="32,92 32,36" />
                                     <polyline points="32,92 96,92" />
                                     <polyline points="32,92 56,48 72,64 96,36" />

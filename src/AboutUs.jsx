@@ -1,13 +1,5 @@
-import Core1 from './assets/integrity.png'
-import Core2 from './assets/reliability.png'
-import Core3 from './assets/growth.png'
-import Core4 from './assets/customerF.png'
-import Core5 from './assets/innovation.png'
-import whcG from './assets/whcG.png'
-import whcGMobile from './assets/whcGMobile.png'
+
 import marWom from './assets/marWom.png'
-import pillLogo from './assets/logoR2.png'
-import { ShieldCheck, BadgeCheck, TrendingUp, HeartHandshake, Lightbulb } from 'lucide-react'
 
 
 function AboutUss() {
@@ -27,7 +19,7 @@ function AboutUss() {
                             banking solutions for Nigerians. We are committed to promoting financial inclusion and empowering local communities. We deliver reliable financial services our customers need to build lasting
                             stability and create new opportunities for growth. </p>
 
-                        <img src={marWom} className='marWom' />
+                        <img src={marWom} alt="shining Woman" className='marWom' />
                     </div>
 
 
